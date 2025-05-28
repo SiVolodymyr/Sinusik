@@ -1,0 +1,277 @@
+.works {
+    margin: 50px 0;
+
+    &_wrapper {
+        margin: 0 auto;
+        width: 1200px;
+        display: flex;
+    }
+
+    &_checkbox {
+        width: 300px;
+    }
+
+    &_gallery {
+        width: 900px;
+        height: 100px;
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    &_photo {
+        max-width: 140px;
+        max-height: 140px;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 0.5s ease forwards;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &_box {
+        margin: 30px 10px;
+
+        &_wrapper {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        &_check {
+            width: 140px;
+            height: 30px;
+
+            input {
+                margin-right: 10px;
+                transition: .3s all;
+                cursor: pointer;
+
+                &:hover {
+                    border: 3px solid black;
+                }
+            }
+        }
+    }
+
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+@media (max-width: 1399px) {
+    .works {
+        margin: 40px 0;
+
+        &_wrapper {
+            width: 1140px;
+        }
+
+        &_checkbox {
+            width: 260px;
+        }
+
+        &_gallery {
+            width: 880px;
+        }
+
+        &_box {
+            &_check {
+                width: 120px;
+            }
+        }
+
+        &_photo {
+            max-width: 136px;
+            max-height: 136px;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .works {
+        margin: 30px 0;
+
+        &_wrapper {
+            width: 960px;
+        }
+
+        &_checkbox {
+            width: 240px;
+        }
+
+        &_box {
+            &_check {
+                width: 110px;
+            }
+        }
+
+        &_gallery {
+            width: 720px;
+            gap: 8px;
+        }
+
+        &_photo {
+            width: 113px;
+            height: 113px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .works {
+        margin: 20px 0;
+
+        &_wrapper {
+            width: 720px;
+        }
+
+        &_checkbox {
+            width: 160px;
+        }
+
+        &_box {
+            margin: 10px 5px;
+
+            &_wrapper {
+                margin-top: 10px;
+            }
+
+            &_check {
+                font-size: 14px;
+                height: 25px;
+            }
+        }
+
+        &_gallery {
+            width: 560px;
+            gap: 5px;
+        }
+
+        &_photo {
+            width: 89px;
+            height: 89px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .works {
+        &_wrapper {
+            width: 540px;
+        }
+
+        &_checkbox {
+            width: 120px;
+        }
+
+        &_gallery {
+            width: 420px;
+            gap: 3px;
+        }
+
+        &_photo {
+            width: 67px;
+            height: 67px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .works {
+        &_wrapper {
+            width: 450px;
+        }
+
+        &_photo {
+            width: 63px;
+            height: 63px;
+        }
+    }
+}
+
+@media (max-width: 479px) {
+    .works {
+        &_wrapper {
+            width: 410px;
+        }
+
+        &_photo {
+            width: 63px;
+            height: 63px;
+        }
+
+        &_checkbox {
+            width: 100px;
+        }
+
+        &_title {
+            font-size: 14px;
+        }
+
+        &_box {
+            &_check {
+                font-size: 12px;
+                height: 23px;
+            }
+        }
+
+        &_photo {
+            width: 59px;
+            height: 59px;
+        }
+    }
+}
+
+@media (max-width: 429px) {
+    .works {
+        &_wrapper {
+            width: 370px;
+        }
+
+        &_photo {
+            width: 51px;
+            height: 51px;
+        }
+    }
+}
+
+@media (max-width: 389px) {
+    .works {
+        &_wrapper {
+            width: 340px;
+        }
+
+        &_photo {
+            width: 45px;
+            height: 45px;
+        }
+    }
+}
+
+@media (max-width: 359px) {
+    .works {
+        &_wrapper {
+            width: 310px;
+        }
+
+        &_photo {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}

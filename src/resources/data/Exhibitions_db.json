@@ -1,0 +1,325 @@
+[
+    {
+        "tab": "Student Group Exhibition",
+        "paragraphs": [
+            "In July 2012, during my time at university, I connected with fellow students who shared a passion for painting. We decided to organize a group exhibition showcasing our work. Although initially planned to include five artists, the event was delayed twice due to some of us not having enough work ready. In the end, three of us participated in the exhibition, which took place at the Cherkasy Regional Museum of Art. I presented 18 works created with watercolor and oil paints. It was a valuable experience that helped shape my early artistic career."
+        ],
+        "images": [
+            {
+                "id": 1,
+                "title": "Student Group Exhibition 1",
+                "src": "../resources/img/exhibitions/1001.jpg"
+            },
+            {
+                "id": 2,
+                "title": "Student Group Exhibition 2",
+                "src": "../resources/img/exhibitions/1002.jpg"
+            },
+            {
+                "id": 3,
+                "title": "Student Group Exhibition 3",
+                "src": "../resources/img/exhibitions/1003.jpg"
+            },
+            {
+                "id": 4,
+                "title": "Student Group Exhibition 4",
+                "src": "../resources/img/exhibitions/1004.jpg"
+            },
+            {
+                "id": 5,
+                "title": "Student Group Exhibition 5",
+                "src": "../resources/img/exhibitions/1005.jpg"
+            },
+            {
+                "id": 6,
+                "title": "Student Group Exhibition 6",
+                "src": "../resources/img/exhibitions/1006.jpg"
+            },
+            {
+                "id": 7,
+                "title": "Student Group Exhibition 7",
+                "src": "../resources/img/exhibitions/1007.jpg"
+            },
+            {
+                "id": 8,
+                "title": "Student Group Exhibition 8",
+                "src": "../resources/img/exhibitions/1008.jpg"
+            },
+            {
+                "id": 9,
+                "title": "Student Group Exhibition 9",
+                "src": "../resources/img/exhibitions/1009.jpg"
+            },
+            {
+                "id": 10,
+                "title": "Student Group Exhibition 10",
+                "src": "../resources/img/exhibitions/1010.jpg"
+            },
+            {
+                "id": 11,
+                "title": "Student Group Exhibition 11",
+                "src": "../resources/img/exhibitions/1011.jpg"
+            },
+            {
+                "id": 12,
+                "title": "Student Group Exhibition 12",
+                "src": "../resources/img/exhibitions/1012.jpg"
+            },
+            {
+                "id": 13,
+                "title": "Student Group Exhibition 13",
+                "src": "../resources/img/exhibitions/1013.jpg"
+            }
+        ]
+    },
+    {
+        "tab": "The Brick Lane Gallery",
+        "paragraphs": [
+            "My exhibition at The Brick Lane Gallery in London came about quite unexpectedly. I received an invitation from the gallery to exhibit my work, and I gladly accepted. Although I couldn't attend in person, I sent 8 of my favorite pieces to be displayed. The exhibition took place in April and May of 2018, marking my first international exhibition experience."
+        ],
+        "images": [
+            {
+                "id": 1,
+                "title": "The Brick Lane Gallery 1",
+                "src": "../resources/img/exhibitions/2001.jpg"
+            },
+            {
+                "id": 2,
+                "title": "The Brick Lane Gallery 2",
+                "src": "../resources/img/exhibitions/2002.jpg"
+            },
+            {
+                "id": 3,
+                "title": "The Brick Lane Gallery 3",
+                "src": "../resources/img/exhibitions/2003.jpg"
+            },
+            {
+                "id": 4,
+                "title": "The Brick Lane Gallery 4",
+                "src": "../resources/img/exhibitions/2004.jpg"
+            },
+            {
+                "id": 5,
+                "title": "The Brick Lane Gallery 5",
+                "src": "../resources/img/exhibitions/2005.jpg"
+            }
+        ]
+    },
+    {
+        "tab": "Art Building Filosoffen",
+        "paragraphs": [
+            "In 2019, during my time in Denmark, I visited Filosoffen, a cozy café and art space located in the heart of Odense. After meeting the kind people who worked there, we agreed to host an exhibition in November. I framed and brought 11 of my works from Ukraine, which were displayed on the second floor of the café, offering a beautiful view of the surroundings. The opening was a pleasant event, with many visitors appreciating my paintings."
+        ],
+        "images": [
+            {
+                "id": 1,
+                "title": "Art Building Filosoffen 1",
+                "src": "../resources/img/exhibitions/3001.jpg"
+            },
+            {
+                "id": 2,
+                "title": "Art Building Filosoffen 2",
+                "src": "../resources/img/exhibitions/3002.jpeg"
+            },
+            {
+                "id": 3,
+                "title": "Art Building Filosoffen 3",
+                "src": "../resources/img/exhibitions/3003.jpg"
+            },
+            {
+                "id": 4,
+                "title": "Art Building Filosoffen 4",
+                "src": "../resources/img/exhibitions/3004.jpeg"
+            },
+            {
+                "id": 5,
+                "title": "Art Building Filosoffen 5",
+                "src": "../resources/img/exhibitions/3005.jpg"
+            },
+            {
+                "id": 6,
+                "title": "Art Building Filosoffen 6",
+                "src": "../resources/img/exhibitions/3006.jpg"
+            },
+            {
+                "id": 7,
+                "title": "Art Building Filosoffen 7",
+                "src": "../resources/img/exhibitions/3007.jpg"
+            }
+        ]
+    },
+    {
+        "tab": "Gallery Art",
+        "paragraphs": [
+            "In Cherkasy, a new art space opened in the city center, and I saw it as an ideal venue to showcase my work. After reaching out, my proposal was accepted, and I exhibited my paintings, including pieces from Poland and earlier works. The gallery, though small, had a lovely atmosphere with excellent lighting, making it a great place for my artworks to be displayed."
+        ],
+        "images": [
+            {
+                "id": 1,
+                "title": "Gallery Art 1",
+                "src": "../resources/img/exhibitions/4001.jpg"
+            },
+            {
+                "id": 2,
+                "title": "Gallery Art 2",
+                "src": "../resources/img/exhibitions/4002.jpg"
+            },
+            {
+                "id": 3,
+                "title": "Gallery Art 3",
+                "src": "../resources/img/exhibitions/4003.jpg"
+            },
+            {
+                "id": 4,
+                "title": "Gallery Art 4",
+                "src": "../resources/img/exhibitions/4004.jpg"
+            },
+            {
+                "id": 5,
+                "title": "Gallery Art 5",
+                "src": "../resources/img/exhibitions/4005.jpg"
+            },
+            {
+                "id": 6,
+                "title": "Gallery Art 6",
+                "src": "../resources/img/exhibitions/4006.jpg"
+            },
+            {
+                "id": 7,
+                "title": "Gallery Art 7",
+                "src": "../resources/img/exhibitions/4007.jpg"
+            },
+            {
+                "id": 8,
+                "title": "Gallery Art 8",
+                "src": "../resources/img/exhibitions/4008.jpg"
+            }
+        ]
+    },
+    {
+        "tab": "Gallery of Folk Art",
+        "paragraphs": [
+            "In the winter of 2021 — 2022, I exhibited at the Gallery of Folk Art in Cherkasy, a spacious venue with high ceilings, great lighting, and gray walls — perfect for my paintings. The gallery's unique atmosphere helped to highlight the colors and textures in my works, and it was a wonderful opportunity to showcase my art to a wider audience."
+        ],
+        "images": [
+            {
+                "id": 1,
+                "title": "Gallery of Folk Art 1",
+                "src": "../resources/img/exhibitions/5001.jpg"
+            },
+            {
+                "id": 2,
+                "title": "Gallery of Folk Art 2",
+                "src": "../resources/img/exhibitions/5002.jpg"
+            },
+            {
+                "id": 3,
+                "title": "Gallery of Folk Art 3",
+                "src": "../resources/img/exhibitions/5003.jpg"
+            },
+            {
+                "id": 4,
+                "title": "Gallery of Folk Art 4",
+                "src": "../resources/img/exhibitions/5004.jpg"
+            },
+            {
+                "id": 5,
+                "title": "Gallery of Folk Art 5",
+                "src": "../resources/img/exhibitions/5005.jpg"
+            },
+            {
+                "id": 6,
+                "title": "Gallery of Folk Art 6",
+                "src": "../resources/img/exhibitions/5006.jpg"
+            },
+            {
+                "id": 7,
+                "title": "Gallery of Folk Art 7",
+                "src": "../resources/img/exhibitions/5007.jpg"
+            },
+            {
+                "id": 8,
+                "title": "Gallery of Folk Art 8",
+                "src": "../resources/img/exhibitions/5008.jpg"
+            },
+            {
+                "id": 9,
+                "title": "Gallery of Folk Art 9",
+                "src": "../resources/img/exhibitions/5009.jpg"
+            },
+            {
+                "id": 10,
+                "title": "Gallery of Folk Art 10",
+                "src": "../resources/img/exhibitions/5010.jpg"
+            },
+            {
+                "id": 11,
+                "title": "Gallery of Folk Art 11",
+                "src": "../resources/img/exhibitions/5011.jpg"
+            },
+            {
+                "id": 12,
+                "title": "Gallery of Folk Art 12",
+                "src": "../resources/img/exhibitions/5012.jpg"
+            },
+            {
+                "id": 13,
+                "title": "Gallery of Folk Art 13",
+                "src": "../resources/img/exhibitions/5013.jpg"
+            }
+        ]
+    },
+    {
+        "tab": "Brama Gallery",
+        "paragraphs": [
+            "In 2022, the newly opened Brama Gallery in Cherkasy invited me to exhibit my work. This modern space, with its beautiful interior and perfect lighting, provided a wonderful setting for my paintings. I was excited to display my latest creations and to contribute to the gallery’s vibrant artistic community."
+        ],
+        "images": [
+            {
+                "id": 1,
+                "title": "Brama Gallery 1",
+                "src": "../resources/img/exhibitions/6001.jpg"
+            },
+            {
+                "id": 2,
+                "title": "Brama Gallery 2",
+                "src": "../resources/img/exhibitions/6002.jpg"
+            },
+            {
+                "id": 3,
+                "title": "Brama Gallery 3",
+                "src": "../resources/img/exhibitions/6003.jpg"
+            },
+            {
+                "id": 4,
+                "title": "Brama Gallery 4",
+                "src": "../resources/img/exhibitions/6004.jpg"
+            },
+            {
+                "id": 5,
+                "title": "Brama Gallery 5",
+                "src": "../resources/img/exhibitions/6005.jpg"
+            },
+            {
+                "id": 6,
+                "title": "Brama Gallery 6",
+                "src": "../resources/img/exhibitions/6006.jpg"
+            },
+            {
+                "id": 7,
+                "title": "Brama Gallery 7",
+                "src": "../resources/img/exhibitions/6007.jpg"
+            },
+            {
+                "id": 8,
+                "title": "Brama Gallery 8",
+                "src": "../resources/img/exhibitions/6008.jpg"
+            },
+            {
+                "id": 9,
+                "title": "Brama Gallery 9",
+                "src": "../resources/img/exhibitions/6009.jpg"
+            }
+        ]
+    }
+]

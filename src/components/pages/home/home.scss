@@ -1,0 +1,876 @@
+.carousel {
+    margin: 50px 0;
+
+    &_img {
+
+        &_1 {
+            margin-left: 4px;
+        }
+
+        &_2 {
+            margin: 0 40px;
+        }
+
+        &_3 {
+            margin-right: 4px;
+        }
+
+        &_4 {
+            margin-left: 16px;
+        }
+
+        &_5 {
+            margin: 0 40px;
+        }
+
+        &_6 {
+            margin-right: 40px;
+        }
+
+        &_7 {
+            margin-right: 16px;
+        }
+
+        &_9 {
+            margin: 0 49px;
+        }
+
+        &_10 {
+            margin-right: 49px;
+        }
+
+        &_13 {
+            margin: 0 14px;
+        }
+
+        &_15 {
+            margin-left: 58px;
+        }
+
+        &_16 {
+            margin: 0 49px;
+        }
+
+        &_17 {
+            margin-right: 49px;
+        }
+
+        &_18 {
+            margin-right: 58px;
+        }
+
+        &_19 {
+            margin-left: 54px;
+        }
+
+        &_20 {
+            margin: 0 49px;
+        }
+
+        &_21 {
+            margin-right: 54px;
+        }
+
+        &_22 {
+            margin-left: 62px;
+        }
+
+        &_23 {
+            margin: 0 49px;
+        }
+
+        &_24 {
+            margin-right: 49px;
+        }
+
+        &_25 {
+            margin-right: 62px;
+        }
+    }
+
+    &-indicators {
+        display: none;
+    }
+
+    &-control-next,
+    &-control-prev {
+        top: 50%
+    }
+}
+
+.home {
+    &_text {
+        margin-top: 100px;
+        text-align: center;
+
+        &_2 {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 1399px) {
+    .carousel {
+        margin: 40px 0;
+
+        &_img {
+            max-height: 300px;
+
+            &_2 {
+                margin: 0 45px;
+            }
+
+            &_4 {
+                margin-left: 2px;
+            }
+
+            &_5 {
+                margin: 0 45px;
+            }
+
+            &_6 {
+                margin-right: 45px;
+            }
+
+            &_7 {
+                margin-right: 2px;
+            }
+
+            &_8 {
+                margin-left: 0px;
+            }
+
+            &_9 {
+                margin: 0 45px;
+            }
+
+            &_10 {
+                margin-right: 45px;
+            }
+
+            &_11 {
+                margin-right: 0px;
+            }
+
+            &_15 {
+                margin-left: 43px;
+            }
+
+            &_16 {
+                margin: 0 49px;
+            }
+
+            &_17 {
+                margin-right: 49px;
+            }
+
+            &_18 {
+                margin-right: 43px;
+            }
+
+            &_19 {
+                margin-left: 43px;
+            }
+
+            &_20 {
+                margin: 0 49px;
+            }
+
+            &_21 {
+                margin-right: 43px;
+            }
+
+            &_22 {
+                margin-left: 46px;
+            }
+
+            &_23 {
+                margin: 0 49px;
+            }
+
+            &_24 {
+                margin-right: 49px;
+            }
+
+            &_25 {
+                margin-right: 46px;
+            }
+        }
+
+        &-control {
+
+            &-prev,
+            &-next {
+                top: 45%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .carousel {
+        margin: 30px 0;
+
+        &_img {
+            max-height: 250px;
+
+            &_2 {
+                margin: 0 42px;
+            }
+
+            &_4 {
+                margin-left: 0px;
+            }
+
+            &_5 {
+                margin: 0 42px;
+            }
+
+            &_6 {
+                margin-right: 42px;
+            }
+
+            &_7 {
+                margin-right: 0px;
+            }
+
+            &_8 {
+                margin-left: 0px;
+            }
+
+            &_9 {
+                margin: 0 41px;
+            }
+
+            &_10 {
+                margin-right: 41px;
+            }
+
+            &_11 {
+                margin-right: 0px;
+            }
+
+            &_15 {
+                margin-left: 29px;
+            }
+
+            &_16 {
+                margin: 0 49px;
+            }
+
+            &_17 {
+                margin-right: 49px;
+            }
+
+            &_18 {
+                margin-right: 29px;
+            }
+
+            &_19 {
+                margin-left: 33px;
+            }
+
+            &_20 {
+                margin: 0 49px;
+            }
+
+            &_21 {
+                margin-right: 33px;
+            }
+
+            &_22 {
+                margin-left: 31px;
+            }
+
+            &_23 {
+                margin: 0 49px;
+            }
+
+            &_24 {
+                margin-right: 49px;
+            }
+
+            &_25 {
+                margin-right: 31px;
+            }
+        }
+
+        &-control {
+
+            &-prev,
+            &-next {
+                top: 42%;
+            }
+        }
+    }
+
+    .home {
+        &_text {
+            margin-top: 70px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .carousel {
+        margin: 20px 0;
+
+        &_img {
+            max-height: 190px;
+
+            &_2 {
+                margin: 0 26px;
+            }
+
+            &_5 {
+                margin: 0 28px;
+            }
+
+            &_6 {
+                margin-right: 28px;
+            }
+
+            &_9 {
+                margin: 0 28px;
+            }
+
+            &_10 {
+                margin-right: 28px;
+            }
+
+            &_13 {
+                margin: 0 9px;
+            }
+
+            &_15 {
+                margin-left: 20px;
+            }
+
+            &_16 {
+                margin: 0 35px;
+            }
+
+            &_17 {
+                margin-right: 35px;
+            }
+
+            &_18 {
+                margin-right: 20px;
+            }
+
+            &_19 {
+                margin-left: 20px;
+            }
+
+            &_20 {
+                margin: 0 37px;
+            }
+
+            &_21 {
+                margin-right: 20px;
+            }
+
+            &_22 {
+                margin-left: 20px;
+            }
+
+            &_23 {
+                margin: 0 36px;
+            }
+
+            &_24 {
+                margin-right: 36px;
+            }
+
+            &_25 {
+                margin-right: 20px;
+            }
+        }
+
+        &-control {
+
+            &-prev,
+            &-next {
+                top: 40%;
+            }
+        }
+    }
+
+    .home {
+        &_text {
+            margin-top: 50px;
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    .carousel {
+
+        &_img {
+
+            &_1 {
+                margin: 0;
+            }
+
+            &_2 {
+                margin: 0 18px;
+            }
+
+            &_3 {
+                margin: 0;
+            }
+
+            &_5 {
+                margin: 0 18px;
+            }
+
+            &_6 {
+                margin-right: 18px;
+            }
+
+            &_9 {
+                margin: 0 18px;
+            }
+
+            &_10 {
+                margin-right: 18px;
+            }
+
+            &_13 {
+                margin: 0 2px;
+            }
+
+            &_15 {
+                margin-left: 15px;
+            }
+
+            &_16 {
+                margin: 0 24px;
+            }
+
+            &_17 {
+                margin-right: 24px;
+            }
+
+            &_18 {
+                margin-right: 15px;
+            }
+
+            &_19 {
+                margin-left: 15px;
+            }
+
+            &_20 {
+                margin: 0 24px;
+            }
+
+            &_21 {
+                margin-right: 15px;
+            }
+
+            &_22 {
+                margin-left: 15px;
+            }
+
+            &_23 {
+                margin: 0 24px;
+            }
+
+            &_24 {
+                margin-right: 24px;
+            }
+
+            &_25 {
+                margin-right: 15px;
+            }
+        }
+    }
+
+    .home {
+        &_text {
+            font-size: 14px;
+            width: 503px;
+            margin: 70px auto 30px auto;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel {
+        &_img {
+            height: 120px;
+
+            &_2 {
+                margin: 0 16px;
+            }
+
+            &_5 {
+                margin: 0 16px;
+            }
+
+            &_6 {
+                margin-right: 16px;
+            }
+
+            &_9 {
+                margin: 0 16px;
+            }
+
+            &_10 {
+                margin-right: 16px;
+            }
+
+            &_15 {
+                margin-left: 11px;
+            }
+
+            &_16 {
+                margin: 0 22px;
+            }
+
+            &_17 {
+                margin-right: 22px;
+            }
+
+            &_18 {
+                margin-right: 11px;
+            }
+
+            &_19 {
+                margin-left: 11px;
+            }
+
+            &_20 {
+                margin: 0 23px;
+            }
+
+            &_21 {
+                margin-right: 11px;
+            }
+
+            &_22 {
+                margin-left: 11px;
+            }
+
+            &_23 {
+                margin: 0 22px;
+            }
+
+            &_24 {
+                margin-right: 22px;
+            }
+
+            &_25 {
+                margin-right: 11px;
+            }
+        }
+    }
+
+    .home {
+        &_text {
+            font-size: 14px;
+            width: 365px;
+            margin: 70px auto 30px auto;
+            line-height: 18px;
+            font-weight: 300;
+        }
+    }
+}
+
+@media (max-width: 479px) {
+    .carousel {
+        &_img {
+            height: 110px;
+
+            &_2 {
+                margin: 0 14px;
+            }
+
+            &_5 {
+                margin: 0 14px;
+            }
+
+            &_6 {
+                margin-right: 14px;
+            }
+
+            &_9 {
+                margin: 0 14px;
+            }
+
+            &_10 {
+                margin-right: 14px;
+            }
+
+            &_15 {
+                margin-left: 10px;
+            }
+
+            &_16 {
+                margin: 0 19px;
+            }
+
+            &_17 {
+                margin-right: 19px;
+            }
+
+            &_18 {
+                margin-right: 10px;
+            }
+
+            &_19 {
+                margin-left: 10px;
+            }
+
+            &_20 {
+                margin: 0 20px;
+            }
+
+            &_21 {
+                margin-right: 10px;
+            }
+
+            &_22 {
+                margin-left: 10px;
+            }
+
+            &_23 {
+                margin: 0 19px;
+            }
+
+            &_24 {
+                margin-right: 19px;
+            }
+
+            &_25 {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .home {
+        &_text {
+            width: 272px;
+            margin: 50px auto 30px auto;
+            font-size: 12px;
+        }
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        height: 45%;
+    }
+}
+
+@media (max-width: 429px) {
+    .carousel {
+        &_img {
+            height: 99px;
+
+            &_2 {
+                margin: 0 13px;
+            }
+
+            &_5 {
+                margin: 0 13px;
+            }
+
+            &_6 {
+                margin-right: 13px;
+            }
+
+            &_9 {
+                margin: 0 12px;
+            }
+
+            &_10 {
+                margin-right: 12px;
+            }
+
+            &_15 {
+                margin-left: 10px;
+            }
+
+            &_16 {
+                margin: 0 17px;
+            }
+
+            &_17 {
+                margin-right: 17px;
+            }
+
+            &_18 {
+                margin-right: 10px;
+            }
+
+            &_19 {
+                margin-left: 10px;
+            }
+
+            &_20 {
+                margin: 0 17px;
+            }
+
+            &_21 {
+                margin-right: 10px;
+            }
+
+            &_22 {
+                margin-left: 10px;
+            }
+
+            &_23 {
+                margin: 0 17px;
+            }
+
+            &_24 {
+                margin-right: 17px;
+            }
+
+            &_25 {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .home {
+        &_text {
+            width: 261px;
+        }
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        height: 40%;
+    }
+}
+
+@media (max-width: 389px) {
+    .carousel {
+        &_img {
+            height: 91px;
+
+            &_2 {
+                margin: 0 12px;
+            }
+
+            &_5 {
+                margin: 0 12px;
+            }
+
+            &_6 {
+                margin-right: 12px;
+            }
+
+            &_9 {
+                margin: 0 11px;
+            }
+
+            &_10 {
+                margin-right: 11px;
+            }
+
+            &_15 {
+                margin-left: 10px;
+            }
+
+            &_16 {
+                margin: 0 15px;
+            }
+
+            &_17 {
+                margin-right: 15px;
+            }
+
+            &_18 {
+                margin-right: 10px;
+            }
+
+            &_19 {
+                margin-left: 10px;
+            }
+
+            &_20 {
+                margin: 0 15px;
+            }
+
+            &_21 {
+                margin-right: 10px;
+            }
+
+            &_22 {
+                margin-left: 10px;
+            }
+
+            &_23 {
+                margin: 0 15px;
+            }
+
+            &_24 {
+                margin-right: 15px;
+            }
+
+            &_25 {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .home {
+        &_text {
+            width: 261px;
+        }
+    }
+}
+
+@media (max-width: 359px) {
+    .carousel {
+        &_img {
+            height: 82px;
+
+            &_15 {
+                margin-left: 10px;
+            }
+
+            &_16 {
+                margin: 0 14px;
+            }
+
+            &_17 {
+                margin-right: 14px;
+            }
+
+            &_18 {
+                margin-right: 10px;
+            }
+
+            &_19 {
+                margin-left: 10px;
+            }
+
+            &_20 {
+                margin: 0 14px;
+            }
+
+            &_21 {
+                margin-right: 10px;
+            }
+
+            &_22 {
+                margin-left: 10px;
+            }
+
+            &_23 {
+                margin: 0 14px;
+            }
+
+            &_24 {
+                margin-right: 14px;
+            }
+
+            &_25 {
+                margin-right: 10px;
+            }
+        }
+    }
+}

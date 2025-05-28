@@ -1,0 +1,380 @@
+@import '../../../style/variables.scss';
+
+.contacts {
+    margin: 50px 0;
+
+    &_wrapper {
+        margin: 0 auto;
+        width: 1200px;
+        display: flex;
+    }
+
+    &_photo {
+        width: 500px;
+        margin-left: 100px;
+
+        img {
+            width: 100%;
+        }
+
+    }
+
+    &_social {
+        margin-top: 10px;
+    }
+
+    &_link {
+
+        &_e {
+            width: 32px;
+            margin-right: 10px;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &_info {
+        margin-top: 150px;
+        margin-right: 50px;
+        width: 700px;
+        min-height: 750px;
+        text-align: right;
+
+        &_name {
+            font-size: 22px;
+            font-weight: 700;
+        }
+    }
+}
+
+.form {
+    margin: 58px 0 auto auto;
+    padding: 20px;
+    width: 400px;
+    min-height: 300px;
+    border-radius: 3px;
+    border: 1px solid black;
+    box-shadow: 0 9px 23px 0 rgb(0 0 0 / 3%);
+
+    h2 {
+        text-align: right;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    label {
+        display: block;
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    input {
+        width: 100%;
+        height: 35px;
+        padding: 5px 15px;
+        border: 1px solid black;
+        background-color: inherit;
+        color: #353535;
+        border-radius: 10px;
+        font-size: 16px;
+
+        &:focus {
+            outline: 1px solid #f57507;
+        }
+    }
+
+    textarea {
+        height: 80px;
+        width: 100%;
+        padding: 5px 15px;
+        font-size: 16px;
+        border: 1px solid black;
+        background-color: inherit;
+        color: #353535;
+        border-radius: 10px;
+        resize: none;
+
+        &:focus {
+            outline: 1px solid #f57507;
+        }
+    }
+
+    input[type="checkbox"] {
+        display: inline;
+        font-size: 14px;
+        width: 25px;
+        height: 25px;
+        margin-top: 0;
+        margin-right: 15px;
+    }
+
+    .checkbox {
+        display: flex;
+        align-items: center;
+    }
+
+    button {
+        display: block;
+        width: 100px;
+        padding: 3px;
+        margin: 5px 0 auto auto;
+        font-size: 14px;
+        color: #000;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: inherit;
+    }
+
+    .error {
+        color: #e53e3e;
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .contacts {
+        margin-top: 40px;
+
+        &_photo {
+            width: 400px;
+        }
+
+        &_info {
+            width: 600px;
+            margin-top: 95px;
+        }
+    }
+}
+
+@media (max-width: 1399px) {
+    .contacts {
+        margin: 40px 0;
+    }
+}
+
+@media (max-width: 1199px) {
+    .contacts {
+        margin: 30px 0;
+
+        &_wrapper {
+            width: 960px;
+        }
+
+        &_info {
+            width: 560px;
+            margin-top: 60px;
+
+            &_name {
+                font-size: 20px;
+            }
+        }
+
+    }
+
+    .form {
+        margin: 15px 0 auto auto;
+        width: 350px;
+        padding: 15px;
+
+        h2 {
+            font-size: 16px;
+        }
+
+        input {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .contacts {
+
+        &_wrapper {
+            width: 720px;
+        }
+
+        &_photo {
+            margin-left: 20px;
+        }
+
+        &_info {
+            margin-top: 10px;
+            margin-right: 0;
+
+            &_name {
+                font-size: 18px;
+            }
+
+            &_place {
+                font-size: 14px;
+            }
+        }
+
+        &_social {
+            a svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        &_link {
+            &_e {
+                width: 27px;
+            }
+        }
+    }
+
+    .form {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contacts {
+        &_wrapper {
+            width: 540px;
+            justify-content: space-between;
+        }
+
+        &_photo {
+            width: 200px;
+            margin-top: 20px;
+        }
+
+        &_info {
+            width: 300px;
+
+            &_name {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .form {
+        width: 270px;
+
+        h2 {
+            font-size: 14px;
+        }
+
+        label {
+            font-size: 12px;
+        }
+
+        .error {
+            font-size: 12px;
+            margin: 0;
+        }
+
+        input {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .contacts {
+        &_wrapper {
+            width: 450px;
+            flex-direction: column;
+        }
+
+        &_photo {
+            margin: 0 auto;
+        }
+
+        &_info {
+            width: 450px;
+            text-align: center;
+
+            &_form {
+                width: 450px;
+            }
+        }
+    }
+
+    .form {
+        width: 360px;
+        margin: 15px auto auto 0;
+    }
+}
+
+@media (max-width: 479px) {
+    .contacts {
+        &_wrapper {
+            width: 410px;
+        }
+
+        &_info {
+            width: 410px;
+
+            &_form {
+                width: 410px;
+            }
+        }
+
+        .form {
+            margin: 15px auto;
+        }
+    }
+}
+
+@media (max-width: 429px) {
+    .contacts {
+        &_wrapper {
+            width: 370px;
+        }
+
+        &_info {
+            width: 370px;
+
+            &_form {
+                width: 370px;
+            }
+        }
+    }
+}
+
+@media (max-width: 389px) {
+    .contacts {
+        &_wrapper {
+            width: 340px;
+        }
+
+        &_info {
+            width: 340px;
+
+            &_form {
+                width: 340px;
+            }
+        }
+    }
+
+    .form {
+        width: 340px;
+    }
+}
+
+@media (max-width: 359px) {
+    .contacts {
+        &_wrapper {
+            width: 310px;
+        }
+
+        &_info {
+            width: 310px;
+
+            &_form {
+                width: 310px;
+            }
+        }
+    }
+
+    .form {
+        width: 310px;
+    }
+}
