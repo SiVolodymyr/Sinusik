@@ -79,27 +79,11 @@
 
         &_text {
             margin: 15px;
-
-            p {
-                font-size: 14px;
-                line-height: 16px;
-                font-weight: 300;
-            }
         }
     }
 
     .title {
         margin-top: 10px;
-    }
-}
-
-@media (max-width: 429px) {
-    .biography {
-        &_text {
-            p {
-                font-size: 12px;
-            }
-        }
     }
 }
 

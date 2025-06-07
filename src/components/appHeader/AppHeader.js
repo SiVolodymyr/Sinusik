@@ -16,7 +16,7 @@ const AppHeader = ({ bgColor, setBgColor }) => {
         setIsActive(false);
     };
 
-    const colors = ['#ffffff', '#eeeeee', '#dadada', '#cccccc', '#e6e4e1', '#dad7d3'];
+    const colors = ['#ffffff', '#dadada', '#bdbdbd', '#a3a3a3', '#cfccbb', '#b1ae9c'];
 
     return (
         <div className='header'>
@@ -46,7 +46,7 @@ const AppHeader = ({ bgColor, setBgColor }) => {
                             <li className='menu_item'><NavLink className={'menu_links'} style={({ isActive }) => ({ fontWeight: isActive ? '700' : 'inherit' })} to="/works" onClick={closeMenu}>Works</NavLink></li>
                             <li className='menu_item'><NavLink className={'menu_links'} style={({ isActive }) => ({ fontWeight: isActive ? '700' : 'inherit' })} to="/contacts" onClick={closeMenu}>Contacts</NavLink></li>
                         </ul>
-                        <div class={`hamburger hamburger${isActive ? '_active' : ''}`} onClick={menuClick}>
+                        <div className={`hamburger hamburger${isActive ? '_active' : ''}`} onClick={menuClick}>
                             <span></span>
                             <span></span>
                             <span></span>

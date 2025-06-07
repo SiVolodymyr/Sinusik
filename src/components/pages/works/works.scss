@@ -185,21 +185,21 @@
         }
 
         &_photo {
-            width: 67px;
-            height: 67px;
+            width: 81px;
+            height: 81px;
         }
     }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 576px) {
     .works {
         &_wrapper {
             width: 450px;
         }
 
         &_photo {
-            width: 63px;
-            height: 63px;
+            width: 80px;
+            height: 80px;
         }
     }
 }
@@ -207,6 +207,11 @@
 @media (max-width: 479px) {
     .works {
         &_wrapper {
+            width: 410px;
+            flex-direction: column;
+        }
+
+        &_gallery {
             width: 410px;
         }
 
@@ -216,7 +221,7 @@
         }
 
         &_checkbox {
-            width: 100px;
+            width: 410px;
         }
 
         &_title {
@@ -228,11 +233,15 @@
                 font-size: 12px;
                 height: 23px;
             }
+
+            &_year {
+                width: 100px;
+            }
         }
 
         &_photo {
-            width: 59px;
-            height: 59px;
+            width: 100px;
+            height: 100px;
         }
     }
 }
@@ -243,9 +252,23 @@
             width: 370px;
         }
 
+        &_checkbox {
+            width: 370px;
+        }
+
+        &_gallery {
+            width: 370px;
+        }
+
+        &_box {
+            &_year {
+                width: 90px;
+            }
+        }
+
         &_photo {
-            width: 51px;
-            height: 51px;
+            width: 90px;
+            height: 90px;
         }
     }
 }
@@ -256,9 +279,23 @@
             width: 340px;
         }
 
+        &_checkbox {
+            width: 340px;
+        }
+
+        &_gallery {
+            width: 340px;
+        }
+
+        &_box {
+            &_year {
+                width: 82px;
+            }
+        }
+
         &_photo {
-            width: 45px;
-            height: 45px;
+            width: 82px;
+            height: 82px;
         }
     }
 }
@@ -269,9 +306,27 @@
             width: 310px;
         }
 
+        &_checkbox {
+            width: 310px;
+        }
+
+        &_gallery {
+            width: 310px;
+        }
+
+        &_box {
+            &_check {
+                width: 150px;
+            }
+        }
+
+        &_box_year {
+            width: 100px;
+        }
+
         &_photo {
-            width: 50px;
-            height: 50px;
+            width: 101px;
+            height: 101px;
         }
     }
 }

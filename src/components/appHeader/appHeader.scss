@@ -152,7 +152,7 @@
         left: -100%;
         top: 0;
         height: 100vh;
-        padding: 150px 15px;
+        padding: 20% 15px;
         background-color: rgba(0, 0, 0, .8);
         transition: 0.6s all;
         border-radius: none;
@@ -173,8 +173,6 @@
         &_links {
             font-size: 20px;
             width: 100%;
-            height: 70px;
-            padding-top: 20px;
         }
     }
 
@@ -222,10 +220,20 @@
                 width: 400px;
             }
         }
+
+        .site_colour {
+            width: 180px;
+            height: 15px;
+
+            &_main {
+                width: 40px;
+                height: 15px;
+            }
+        }
     }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 576px) {
     .app {
         &__menu {
             ul {
@@ -236,7 +244,6 @@
 
     .menu {
         &_links {
-            height: 60px;
             font-size: 18px;
         }
     }
@@ -244,19 +251,13 @@
 
 @media (max-width: 479px) {
     .menu {
-        &_links {
-            height: 50px;
-        }
+        padding: 50% 15px;
     }
 }
 
 @media (max-width: 429px) {
     .logo {
         width: 90px;
-    }
-
-    .menu {
-        padding: 100px 15px;
     }
 }
 

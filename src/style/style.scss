@@ -63,15 +63,8 @@ input::-webkit-inner-spin-button {
     }
 }
 
-@media (max-width: 767px) {
-    .title {
-        font-size: 16px;
-        font-weight: 400;
-    }
-}
-
 @media (max-width: 429px) {
     .title {
-        font-size: 14px;
+        font-size: 16px;
     }
 }

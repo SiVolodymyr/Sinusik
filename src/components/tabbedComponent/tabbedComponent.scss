@@ -1,0 +1,690 @@
+@mixin tabLayout($name) {
+    margin: 50px 0;
+
+    &_wrapper {
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    &_tabs {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    &_tab {
+        padding: 5px;
+        margin-right: 5px;
+        border: none;
+        text-align: left;
+
+        .active {
+            font-weight: 700;
+        }
+
+    }
+
+    &_title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    &_contents {
+        width: 900px;
+
+        p {
+            text-align: justify;
+        }
+    }
+
+    &_descr {
+        p {
+            margin-bottom: 10px;
+        }
+    }
+
+    &_images {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 33px;
+        justify-content: left;
+        align-self: center;
+    }
+
+    &_img {
+        display: block;
+        width: 200px;
+        height: 200px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            transition: transform .3s ease;
+            transform-origin: center;
+            object-fit: cover;
+        }
+    }
+
+    .spinner_wrapper {
+        margin: 0 auto;
+    }
+
+    @media (max-width: 1399px) {
+
+        margin: 40px 0;
+
+        &_wrapper {
+            width: 1140px;
+        }
+
+        &_tabs {
+            width: 260px;
+        }
+
+        &_tab {
+            padding: 3px;
+        }
+
+        &_contents {
+            width: 880px;
+        }
+
+        &_images {
+            gap: 26px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        margin: 20px 0;
+
+        &_wrapper {
+            width: 720px;
+        }
+
+        &_tabs {
+            width: 210px;
+        }
+
+        &_contents {
+            width: 510px;
+        }
+
+        &_images {
+            gap: 7px;
+        }
+
+        &_img {
+            width: 122px;
+            height: 122px;
+        }
+
+        &_title {
+            margin-bottom: 10px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        margin-bottom: 30px;
+
+        &_wrapper {
+            width: 540px;
+            flex-direction: column;
+        }
+
+        &_tabs {
+            width: 540px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        &_tab {
+            width: 150px;
+            margin: 0;
+            margin: 0 30px 10px 0;
+            font-weight: 400;
+            line-height: 17px;
+        }
+
+        &_contents {
+            width: 540px;
+        }
+
+        &_descr {
+            p {
+                font-size: 14px;
+            }
+        }
+
+        &_img {
+            width: 129px;
+            height: 129px;
+        }
+    }
+
+    @media (max-width: 575px) {
+
+        &_tabs {
+            width: 450px;
+        }
+
+        &_title {
+            font-size: 16px;
+        }
+
+        &_tab {
+            font-size: 16px;
+            width: 120px;
+            margin: 0 30px 5px 0;
+            font-weight: 400;
+        }
+
+        &_contents {
+            width: 450px;
+        }
+
+        &_images {
+            gap: 5px;
+        }
+
+        &_img {
+            width: 108px;
+            height: 108px;
+        }
+
+        &_descr {
+            p {
+                line-height: 16px;
+                font-weight: 300;
+            }
+        }
+    }
+
+    @media (max-width: 479px) {
+        &_tabs {
+            width: 410px;
+        }
+
+        &_tab {
+            width: 106px;
+        }
+
+        &_contents {
+            width: 410px;
+        }
+
+        &_img {
+            width: 98px;
+            height: 98px;
+        }
+    }
+
+    @media (max-width: 429px) {
+        &_wrapper {
+            width: 370px;
+        }
+
+        &_tabs {
+            width: 370px;
+        }
+
+        &_contents {
+            width: 370px;
+        }
+
+        &_tab {
+            width: 93px;
+            font-size: 13px;
+            margin: 0 30px 2px 0;
+        }
+
+        &_title {
+            font-size: 14px;
+        }
+
+        &_descr {
+            p {
+                font-size: 12px;
+            }
+        }
+
+        &_images {
+            gap: 3px;
+        }
+
+        &_img {
+            width: 90px;
+            height: 90px;
+        }
+    }
+
+    @media (max-width: 389px) {
+        &_wrapper {
+            width: 340px;
+        }
+
+        &_tabs {
+            width: 340px;
+        }
+
+        &_contents {
+            width: 340px;
+        }
+
+        &_tab {
+            width: 88px;
+            font-size: 13px;
+            margin: 0 25px 2px 0;
+        }
+
+        &_img {
+            width: 82px;
+            height: 82px;
+        }
+    }
+
+    @media (max-width: 389px) {
+        &_wrapper {
+            width: 310px;
+        }
+
+        &_tabs {
+            width: 310px;
+        }
+
+        &_contents {
+            width: 310px;
+        }
+
+        &_tab {
+            width: 86px;
+            margin: 0px 17px 2px 0;
+        }
+
+        &_img {
+            width: 75px;
+            height: 75px;
+        }
+    }
+}
+
+
+
+
+// @mixin tabLayout($name) {
+//     margin: 50px 0;
+
+//     &_wrapper {
+//         width: 1200px;
+//         margin: 0 auto;
+//         display: flex;
+//     }
+
+//     &_tabs {
+//         width: 300px;
+//         display: flex;
+//         flex-direction: column;
+//         font-size: 20px;
+//         font-weight: 300;
+//     }
+
+//     &_tab {
+//         padding: 5px;
+//         margin-right: 5px;
+//         border: none;
+//         text-align: left;
+
+//         .active {
+//             font-weight: 700;
+//         }
+
+//     }
+
+//     &_title {
+//         font-size: 20px;
+//         margin-bottom: 20px;
+//     }
+
+//     &_contents {
+//         width: 900px;
+
+//         p {
+//             text-align: justify;
+//         }
+//     }
+
+//     &_descr {
+//         p {
+//             margin-bottom: 10px;
+//         }
+//     }
+
+//     &_images {
+//         display: flex;
+//         flex-wrap: wrap;
+//         gap: 33px;
+//         justify-content: left;
+//         align-self: center;
+//     }
+
+//     &_img {
+//         display: block;
+//         width: 200px;
+//         height: 200px;
+//         cursor: pointer;
+//         transition: transform 0.3s ease;
+
+//         &:hover {
+//             transform: scale(1.1);
+//         }
+
+//         img {
+//             width: 100%;
+//             height: 100%;
+//             transition: transform .3s ease;
+//             transform-origin: center;
+//             object-fit: cover;
+//         }
+//     }
+// }
+
+// .spinner_wrapper {
+//     margin: 0 auto;
+// }
+
+// @media (max-width: 1399px) {
+//     %tabLayout {
+//         margin: 40px 0;
+
+//         &_wrapper {
+//             width: 1140px;
+//         }
+
+//         &_tabs {
+//             width: 260px;
+//         }
+
+//         &_tab {
+//             padding: 3px;
+//         }
+
+//         &_contents {
+//             width: 880px;
+//         }
+
+//         &_images {
+//             gap: 26px;
+//         }
+//     }
+// }
+
+// @media (max-width: 1199px) {
+//     %tabLayout {
+//         margin: 30px 0;
+
+//         &_wrapper {
+//             width: 960px;
+//         }
+
+//         &_tabs {
+//             width: 240px;
+//         }
+
+//         &_tab {
+//             font-size: 18px;
+//         }
+
+//         &_contents {
+//             width: 720px;
+//         }
+
+//         &_images {
+//             gap: 15px;
+//         }
+
+//         &_img {
+//             width: 168px;
+//             height: 168px;
+//         }
+
+//         &_title {
+//             font-size: 18px;
+//         }
+//     }
+// }
+
+// @media (max-width: 991px) {
+//     %tabLayout {
+//         margin: 20px 0;
+
+//         &_wrapper {
+//             width: 720px;
+//         }
+
+//         &_tabs {
+//             width: 210px;
+//         }
+
+//         &_contents {
+//             width: 510px;
+//         }
+
+//         &_images {
+//             gap: 7px;
+//         }
+
+//         &_img {
+//             width: 122px;
+//             height: 122px;
+//         }
+
+//         &_title {
+//             margin-bottom: 10px;
+//         }
+//     }
+// }
+
+// @media (max-width: 767px) {
+//     %tabLayout {
+//         margin-bottom: 30px;
+
+//         &_wrapper {
+//             width: 540px;
+//             flex-direction: column;
+//         }
+
+//         &_tabs {
+//             width: 540px;
+//             flex-direction: row;
+//             flex-wrap: wrap;
+//             margin-bottom: 30px;
+//         }
+
+//         &_tab {
+//             width: 150px;
+//             margin: 0;
+//             margin: 0 30px 10px 0;
+//             font-weight: 400;
+//             line-height: 17px;
+//         }
+
+//         &_contents {
+//             width: 540px;
+//         }
+
+//         &_descr {
+//             p {
+//                 font-size: 14px;
+//             }
+//         }
+
+//         &_img {
+//             width: 129px;
+//             height: 129px;
+//         }
+//     }
+// }
+
+// @media (max-width: 575px) {
+//     %tabLayout {
+
+//         &_tabs {
+//             width: 450px;
+//         }
+
+//         &_title {
+//             font-size: 16px;
+//         }
+
+//         &_tab {
+//             font-size: 16px;
+//             width: 120px;
+//             margin: 0 30px 5px 0;
+//             font-weight: 400;
+//         }
+
+//         &_contents {
+//             width: 450px;
+//         }
+
+//         &_images {
+//             gap: 5px;
+//         }
+
+//         &_img {
+//             width: 108px;
+//             height: 108px;
+//         }
+
+//         &_descr {
+//             p {
+//                 line-height: 16px;
+//                 font-weight: 300;
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 479px) {
+//     %tabLayout {
+//         &_tabs {
+//             width: 410px;
+//         }
+
+//         &_tab {
+//             width: 106px;
+//         }
+
+//         &_contents {
+//             width: 410px;
+//         }
+
+//         &_img {
+//             width: 98px;
+//             height: 98px;
+//         }
+//     }
+// }
+
+// @media (max-width: 429px) {
+//     %tabLayout {
+//         &_wrapper {
+//             width: 370px;
+//         }
+
+//         &_tabs {
+//             width: 370px;
+//         }
+
+//         &_contents {
+//             width: 370px;
+//         }
+
+//         &_tab {
+//             width: 93px;
+//             font-size: 13px;
+//             margin: 0 30px 2px 0;
+//         }
+
+//         &_title {
+//             font-size: 14px;
+//         }
+
+//         &_descr {
+//             p {
+//                 font-size: 12px;
+//             }
+//         }
+
+//         &_images {
+//             gap: 3px;
+//         }
+
+//         &_img {
+//             width: 90px;
+//             height: 90px;
+//         }
+//     }
+// }
+
+// @media (max-width: 389px) {
+//     %tabLayout {
+//         &_wrapper {
+//             width: 340px;
+//         }
+
+//         &_tabs {
+//             width: 340px;
+//         }
+
+//         &_contents {
+//             width: 340px;
+//         }
+
+//         &_tab {
+//             width: 88px;
+//             font-size: 13px;
+//             margin: 0 25px 2px 0;
+//         }
+
+//         &_img {
+//             width: 82px;
+//             height: 82px;
+//         }
+//     }
+// }
+
+// @media (max-width: 389px) {
+//     %tabLayout {
+//         &_wrapper {
+//             width: 310px;
+//         }
+
+//         &_tabs {
+//             width: 310px;
+//         }
+
+//         &_contents {
+//             width: 310px;
+//         }
+
+//         &_tab {
+//             width: 86px;
+//             margin: 0px 17px 2px 0;
+//         }
+
+//         &_img {
+//             width: 75px;
+//             height: 75px;
+//         }
+//     }
+// }

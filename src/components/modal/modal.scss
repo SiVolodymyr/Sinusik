@@ -19,9 +19,9 @@
 
     &_content {
         position: relative;
-        max-width: 60%;
+        max-width: 70%;
         min-width: 300px;
-        max-height: 90%;
+        max-height: 95%;
         overflow: hidden;
         position: relative;
         padding: 25px;
@@ -42,13 +42,13 @@
     }
 
     &_image {
-        min-width: 300px;
+        height: 76vh;
     }
 
     &_img {
         width: 100%;
         margin: 0 auto;
-        height: auto;
+        height: 100%;
         user-select: none;
         pointer-events: auto;
         touch-action: pan-y;
@@ -67,13 +67,20 @@
         font-size: 15px;
         font-weight: 300;
 
+        &_r,
+        &_l {
+            font-size: 20px;
+        }
+
         &_index {
-            margin: 0;
+            margin: 4px 0 0 0;
+            font-size: 18px;
+            font-weight: 400;
         }
 
         &_title {
-            font-size: 18px;
-            font-weight: 500;
+            font-size: 20px;
+            font-weight: 700;
             color: #444;
             margin-bottom: 5px;
         }
@@ -84,7 +91,9 @@
             flex-wrap: wrap;
             flex-direction: row;
             justify-content: space-between;
-            width: 300px;
+            width: 400px;
+            font-weight: 400;
+            font-size: 18px;
         }
 
         &_info {
@@ -137,11 +146,11 @@
 @media (orientation: landscape) and (max-height: 600px) {
     .modal {
         &_img.vertical {
-            max-width: 59%;
+            max-width: 90%;
         }
 
         &_img.horizontal {
-            max-width: 79%;
+            max-width: 90%;
         }
 
         &_content {
@@ -209,11 +218,23 @@
     .modal {
 
         &_content.horizontal {
-            max-width: 70%;
+            max-width: 90%;
+        }
+
+        &_content.vertical {
+            max-height: 85%;
+        }
+
+        &_image.vertical {
+            height: 68vh;
+        }
+
+        &_image.horizontal {
+            height: 55vh;
         }
 
         &_img.vertical {
-            max-width: 85%;
+            max-width: 100%;
         }
 
         &_img.horizontal {
@@ -253,17 +274,24 @@
     .modal {
 
         &_content.horizontal {
-            max-width: 80%;
+            max-width: 100%;
+        }
+
+        &_image.vertical {
+            height: 60vh;
         }
 
         &_img.vertical {
-            max-width: 75%;
+            max-width: 100%;
         }
 
         &_descr {
             &_wrapper {
-                width: 235px;
-                font-size: 13px;
+                width: 300px;
+            }
+
+            &_title {
+                font-size: 18px;
             }
         }
 
@@ -282,7 +310,7 @@
                 &_year,
                 &_size,
                 &_place {
-                    font-size: 14px;
+                    font-size: 16px;
                 }
             }
         }
@@ -298,13 +326,7 @@
         }
 
         &_descr {
-            &_wrapper {
-                width: 215px;
-                font-size: 12px;
-            }
-
             &_title {
-                font-size: 16px;
                 margin-bottom: 0;
             }
 
@@ -315,23 +337,11 @@
 
         &_content {
             padding: 15px 15px 5px 15px;
+            min-width: 330px;
 
             .close_btn {
                 font-size: 20px;
                 top: -3px;
-            }
-
-            .photo {
-                &_title {
-                    font-size: 14px;
-                }
-
-                &_medium,
-                &_year,
-                &_size,
-                &_place {
-                    font-size: 12px;
-                }
             }
         }
     }
@@ -342,19 +352,7 @@
 @media (max-width: 429px) {
     .modal {
 
-        &_img.horizontal {
-            max-width: 96%;
-        }
-
         &_descr {
-            &_wrapper {
-                width: 210px;
-                font-size: 10px;
-            }
-
-            &_title {
-                font-size: 14px;
-            }
 
             &_info {
                 font-size: 12px;
@@ -366,19 +364,6 @@
 
             .close_btn {
                 font-size: 16px;
-            }
-
-            .photo {
-                &_title {
-                    font-size: 13px;
-                }
-
-                &_medium,
-                &_year,
-                &_size,
-                &_place {
-                    font-size: 11px;
-                }
             }
         }
 
@@ -393,46 +378,21 @@
 @media (max-width: 389px) {
     .modal {
 
-        &_img.horizontal {
-            max-width: 92%;
-        }
-
         &_descr {
-            &_wrapper {
-                width: 180px;
-            }
 
             &_title {
                 margin-bottom: -3px;
-                font-size: 12px;
             }
         }
 
         &_content {
             padding: 10px 10px 3px 10px;
-
-            .photo {
-                &_title {
-                    font-size: 12px;
-                }
-
-                &_medium,
-                &_year,
-                &_size,
-                &_place {
-                    font-size: 10px;
-                }
-            }
         }
 
         &_info {
             margin-top: 0;
             margin-bottom: -4px;
             font-size: 10px;
-        }
-
-        &_image {
-            max-width: 77%;
         }
     }
 }
@@ -442,6 +402,10 @@
 
         &_content {
             padding: 12px 12px 5px 12px;
+        }
+
+        &_content.vertical {
+            min-width: 320px;
         }
 
         &_info {

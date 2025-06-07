@@ -204,14 +204,6 @@
         &_info {
             margin-top: 10px;
             margin-right: 0;
-
-            &_name {
-                font-size: 18px;
-            }
-
-            &_place {
-                font-size: 14px;
-            }
         }
 
         &_social {
@@ -230,6 +222,7 @@
 
     .form {
         padding: 12px;
+        margin: 8px 0 auto auto;
     }
 }
 
@@ -257,26 +250,13 @@
     .form {
         width: 270px;
 
-        h2 {
-            font-size: 14px;
-        }
-
-        label {
-            font-size: 12px;
-        }
-
         .error {
-            font-size: 12px;
             margin: 0;
-        }
-
-        input {
-            font-size: 14px;
         }
     }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 576px) {
     .contacts {
         &_wrapper {
             width: 450px;
@@ -293,13 +273,17 @@
 
             &_form {
                 width: 450px;
+
+                label {
+                    text-align: left;
+                }
             }
         }
     }
 
     .form {
         width: 360px;
-        margin: 15px auto auto 0;
+        margin: 15px auto;
     }
 }
 
@@ -315,10 +299,6 @@
             &_form {
                 width: 410px;
             }
-        }
-
-        .form {
-            margin: 15px auto;
         }
     }
 }
@@ -375,6 +355,6 @@
     }
 
     .form {
-        width: 310px;
+        width: 280px;
     }
 }

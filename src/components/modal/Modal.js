@@ -60,7 +60,7 @@ const Modal = ({ isOpen, photo, currentIndex, total, onClose, onPrev, onNext, bg
                     exit={{ opacity: 0 }}
                 >
                     <motion.div
-                        className={`modalW_content ${orientation}`}
+                        className={`modal_content ${orientation}`}
                         style={{ backgroundColor: bgColor }}
                         onClick={(e) => e.stopPropagation()}
                         initial={{ scale: 0.9, opacity: 0 }}
@@ -71,7 +71,7 @@ const Modal = ({ isOpen, photo, currentIndex, total, onClose, onPrev, onNext, bg
                         <button className="close_btn" onClick={onClose}>×</button>
 
                         <div className="modal_inside">
-                            <div className="modal_image">
+                            <div className={`modal_image ${orientation}`}>
                                 {isImageLoading && <Spinner />}
                                 <motion.img
                                     key={photo.src}
@@ -98,7 +98,7 @@ const Modal = ({ isOpen, photo, currentIndex, total, onClose, onPrev, onNext, bg
                         <div className="modal_descr">
                             <div className="modal_descr_info">
                                 <button className="modal_descr modal_descr_l" style={{ backgroundColor: bgColor }} onClick={onPrev}>←</button>
-                                <span className="modalW_descr_index">{currentIndex + 1} / {total}</span>
+                                <span className="modal_descr_index">{currentIndex + 1} / {total}</span>
                                 <button className="modal_descr modal_descr_r" style={{ backgroundColor: bgColor }} onClick={onNext}>→</button>
                             </div>
                             <p className="modal_descr_title">{photo.title}</p>

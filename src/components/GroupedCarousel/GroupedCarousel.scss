@@ -1,0 +1,279 @@
+.capitel_imgs {
+    max-height: 400px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.pleinair_imgs {
+    max-height: 375px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.carousel {
+    &_lastworks {
+        width: 85%;
+
+        .carousel-control {
+
+            &-next {
+                right: -100px;
+            }
+
+            &-prev {
+                left: -100px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1399px) {
+    .pleinair_imgs {
+        max-height: 325px;
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .pleinair_imgs {
+        max-height: 320px;
+    }
+
+    .carousel {
+        &_lastworks {
+            width: 100%;
+
+            .carousel-control {
+
+                &-next {
+                    right: -70px;
+                }
+
+                &-prev {
+                    left: -70px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+
+    .pleinair_imgs {
+        max-height: 240px;
+    }
+
+    .capitel_imgs {
+        max-height: 300px;
+    }
+
+    .carousel {
+        &_lastworks {
+
+            .carousel-control {
+
+                &-next {
+                    right: -55px;
+                }
+
+                &-prev {
+                    left: -55px;
+                }
+            }
+        }
+    }
+
+    .home {
+        &_title {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+
+    .pleinair_imgs {
+        max-height: 180px;
+    }
+
+    .capitel_imgs {
+        max-height: 220px;
+    }
+
+    .carousel {
+        &_lastworks {
+
+            .carousel-control {
+
+                &-next {
+                    right: -40px;
+                }
+
+                &-prev {
+                    left: -40px;
+                }
+            }
+        }
+    }
+
+    .home {
+        &_wrapper {
+            width: 400px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+
+    .capitel_imgs,
+    .pleinair_imgs {
+        max-height: 400px;
+    }
+
+    .carousel {
+        &_lastworks {
+            height: 400px;
+
+            .pleinair {
+                &_imgs {
+
+                    &_2,
+                    &_4,
+                    &_6 {
+                        margin-top: 38px;
+                    }
+                }
+            }
+
+            .carousel-control {
+
+                &-next {
+                    right: 0px;
+                }
+
+                &-prev {
+                    left: 0px;
+                }
+            }
+        }
+
+        &_box {
+            height: 400px;
+        }
+    }
+}
+
+@media (max-width: 479px) {
+
+    .capitel_imgs,
+    .pleinair_imgs {
+        max-height: 370px;
+    }
+
+    .carousel {
+        &_lastworks {
+            height: 370px;
+
+            .carousel-control-prev {
+                top: 34%;
+                left: -10px;
+
+            }
+
+            .carousel-control-next {
+                top: 34%;
+                right: -10px;
+            }
+
+            .pleinair {
+                &_imgs {
+
+                    &_2,
+                    &_4,
+                    &_6 {
+                        margin-top: 55px;
+                    }
+                }
+            }
+        }
+    }
+
+    .home {
+        &_descr {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 429px) {
+
+    .capitel_imgs,
+    .pleinair_imgs {
+        max-height: 330px;
+    }
+
+    .carousel {
+        &_lastworks {
+            height: 330px;
+
+            .carousel-control-prev {
+                top: 32%;
+
+            }
+
+            .carousel-control-next {
+                top: 32%;
+            }
+
+            .pleinair {
+                &_imgs {
+
+                    &_2,
+                    &_4,
+                    &_6 {
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 389px) {
+
+    .capitel_imgs,
+    .pleinair_imgs {
+        max-height: 306px;
+    }
+
+    .carousel {
+        &_lastworks {
+            height: 306px;
+
+            .pleinair {
+                &_imgs {
+
+                    &_2,
+                    &_4,
+                    &_6 {
+                        margin-top: 33px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 359px) {
+
+    .capitel_imgs,
+    .pleinair_imgs {
+        max-height: 280px;
+    }
+
+    .carousel {
+        &_lastworks {
+            height: 280px;
+        }
+    }
+}
