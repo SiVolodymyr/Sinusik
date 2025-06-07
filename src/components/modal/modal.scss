@@ -367,6 +367,14 @@
             }
         }
 
+        &_image.horizontal {
+            height: 44vh;
+        }
+
+        &_image.vertical {
+            height: 53vh;
+        }
+
         &_content {
             padding: 12px 12px 5px 12px;
 
@@ -398,7 +406,7 @@
         }
 
         &_image.vertical {
-            height: 53vh;
+            height: 51vh;
         }
 
         &_content {
