@@ -325,6 +325,14 @@
             font-size: 12px;
         }
 
+        &_image.horizontal {
+            height: 48vh;
+        }
+
+        &_image.vertical {
+            height: 56vh;
+        }
+
         &_descr {
             &_title {
                 margin-bottom: 0;
@@ -383,6 +391,14 @@
             &_title {
                 margin-bottom: -3px;
             }
+        }
+
+        &_image.horizontal {
+            height: 40vh;
+        }
+
+        &_image.vertical {
+            height: 53vh;
         }
 
         &_content {

@@ -161,6 +161,47 @@
     text-align: center;
 }
 
+.modal-thanks-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal-thanks {
+    padding: 30px 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 90%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    background-color: #fff;
+}
+
+.modal-thanks p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.modal-thanks button {
+    padding: 10px 20px;
+    border: none;
+    // color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-thanks button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 @media (max-width: 1399px) {
     .contacts {
         margin: 40px 0;

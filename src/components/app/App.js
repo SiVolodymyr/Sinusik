@@ -48,7 +48,7 @@ const MainContent = () => {
             <Route path="/exhibitions" element={<Navigate to="/exhibitions/student-group-exhibition" replace />} />
             <Route path="/exhibitions/:exhibitionSlug" element={<Exhibitions bgColor={bgColor} />} />
             <Route path="/works" element={<Works bgColor={bgColor} />} />
-            <Route path="/contacts" element={<Contacts />} />
+            <Route path="/contacts" element={<Contacts bgColor={bgColor} />} />
             <Route path="*" element={<Page404 />} />
           </Routes>
         </main>

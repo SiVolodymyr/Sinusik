@@ -20,7 +20,7 @@ const MyTextInput = ({ label, ...props }) => {
     );
 };
 
-const Contacts = () => {
+const Contacts = (bgColor) => {
 
     const [isLoading, setIsLoading] = useState(true);
     const [formStatus, setFormStatus] = useState('idle');
@@ -47,6 +47,9 @@ const Contacts = () => {
             });
 
             setFormStatus('success');
+            setTimeout(() => {
+                setFormStatus('idle');
+            }, 500000);
             resetForm();
         } catch (error) {
             console.error('Error submitting form:', error);
@@ -211,6 +214,24 @@ const Contacts = () => {
                                         )
                                     )}
                                 </Formik>
+                                {formStatus === 'success' && (
+                                    <div className="modal-thanks-overlay" onClick={() => setFormStatus('idle')}>
+                                        <div
+                                            className="modal-thanks"
+                                            style={{ backgroundColor: bgColor }}
+                                            onClick={e => e.stopPropagation()}
+                                        >
+                                            <p>Thank you! Your message has been sent successfully.</p>
+                                            <button
+                                                type="button"
+                                                style={{ backgroundColor: bgColor }}
+                                                onClick={() => setFormStatus('idle')}
+                                            >
+                                                Close
+                                            </button>
+                                        </div>
+                                    </div>
+                                )}
                             </div>
                         </div>
                     </div>
