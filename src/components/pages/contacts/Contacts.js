@@ -173,11 +173,8 @@ const Contacts = () => {
                                                 ✅ Ваше повідомлення успішно надіслано!
                                             </div>
                                         ) : (
-                                            <Form Form className="form" name="contact"
-                                                method="POST"
-                                                data-netlify="true"
-                                                netlify-honeypot="bot-field" netlify>
-
+                                            <Form className="form" name="contact">
+                                                {/* приховане поле для Netlify (потрібне навіть якщо без редіректу) */}
                                                 <input type="hidden" name="form-name" value="contact" />
                                                 <input type="hidden" name="bot-field" />
 
@@ -199,7 +196,7 @@ const Contacts = () => {
                                                     autoComplete="off"
                                                     placeholder="email"
                                                 />
-                                                <ErrorMessage component="div" className="error" name="currency" />
+
                                                 <label htmlFor="text">Your message</label>
                                                 <Field
                                                     id="text"
@@ -208,7 +205,8 @@ const Contacts = () => {
                                                     placeholder="message"
                                                 />
                                                 <ErrorMessage component="div" className="error" name="text" />
-                                                <button type="submit">Send</button>
+
+                                                <button type="submit" disabled={isSubmitting}>Send</button>
                                             </Form>
                                         )
                                     )}
