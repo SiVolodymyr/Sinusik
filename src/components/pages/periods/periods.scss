@@ -77,10 +77,6 @@
     }
 }
 
-.spinner_wrapper {
-    margin: 0 auto;
-}
-
 @media (max-width: 1399px) {
     .periods {
         margin: 40px 0;
@@ -241,7 +237,7 @@
     }
 }
 
-@media (max-width: 479px) {
+@media (max-width: 480px) {
     .periods {
         &_tabs {
             width: 410px;

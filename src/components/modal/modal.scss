@@ -1,7 +1,7 @@
 .modal {
 
     &_overlay {
-        touch-action: none;
+        touch-action: pan-y;
         position: fixed;
         display: flex;
         inset: 0;
@@ -13,20 +13,23 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        overflow: hidden;
+        // overflow: hidden;
         z-index: 1000;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     &_content {
         position: relative;
         max-width: 70%;
         min-width: 300px;
-        max-height: 95%;
-        overflow: hidden;
+        max-height: 95vh;
+        overflow-y: auto;
         position: relative;
         padding: 25px;
         text-align: center;
-        touch-action: none;
+        touch-action: pan-y;
+        -webkit-overflow-scrolling: touch;
 
         .close_btn {
             position: absolute;
@@ -113,8 +116,8 @@
 }
 
 .spinner_wrapper {
-    height: 28vh;
-    margin-top: 8vh;
+    height: 10vh;
+    margin: 20vh auto;
 }
 
 @media (orientation: landscape) and (max-height: 800px) {
@@ -277,8 +280,16 @@
             max-width: 100%;
         }
 
+        &_content.vertical {
+            max-width: 80%;
+        }
+
         &_image.vertical {
-            height: 60vh;
+            height: 55vh;
+        }
+
+        &_image.horizontal {
+            height: 44vh;
         }
 
         &_img.vertical {
@@ -317,7 +328,7 @@
     }
 }
 
-@media (max-width: 479px) {
+@media (max-width: 480px) {
     .modal {
 
         &_r,
@@ -326,11 +337,11 @@
         }
 
         &_image.horizontal {
-            height: 48vh;
+            height: 42vh;
         }
 
         &_image.vertical {
-            height: 56vh;
+            height: 52vh;
         }
 
         &_descr {
@@ -368,11 +379,11 @@
         }
 
         &_image.horizontal {
-            height: 44vh;
+            height: 40vh;
         }
 
         &_image.vertical {
-            height: 53vh;
+            height: 50vh;
         }
 
         &_content {
@@ -406,7 +417,7 @@
         }
 
         &_image.vertical {
-            height: 51vh;
+            height: 50vh;
         }
 
         &_content {

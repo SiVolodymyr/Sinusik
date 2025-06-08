@@ -1,5 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
+
 import img_bio from '../../../resources/img/biography/img_bio.jpg';
 import biographyData from '../../../resources/data/Biography_db.json';
 import Spinner from '../../spinner/Spinner';
@@ -67,7 +70,9 @@ const Biography = () => {
             <div className='biography'>
                 <div className='container'>
                     <div className="biography_photo">
-                        <img src={img_bio} alt="img_bio" />
+                        <Zoom>
+                            <img src={img_bio} alt="img_bio" />
+                        </Zoom>
                     </div>
                     <div className='title'>Volodymyr Sinusik</div>
                     <div className='biography_text'>

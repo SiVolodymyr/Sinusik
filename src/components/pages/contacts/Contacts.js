@@ -2,6 +2,9 @@ import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Formik, Field, Form, ErrorMessage, useField } from 'formik';
 import * as Yup from 'yup';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
+
 import Spinner from '../../spinner/Spinner';
 import './contacts.scss';
 import img from '../../../resources/img/contacts/contacts_photo.jpg';
@@ -104,7 +107,9 @@ const Contacts = (bgColor) => {
                 <div className='container'>
                     <div className='contacts_wrapper'>
                         <div className='contacts_photo'>
-                            <img src={img} alt='contacts_photo' />
+                            <Zoom>
+                                <img src={img} alt='contacts_photo' />
+                            </Zoom>
                         </div>
                         <div className='contacts_info'>
                             <div className='contacts_info_form'>

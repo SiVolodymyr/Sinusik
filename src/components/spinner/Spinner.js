@@ -1,7 +1,7 @@
 const Spinner = () => {
     return (
         <div className="spinner_wrapper">
-            <svg xmlns="http://www.w3.org/2000/svg" style={{ margin: '0 auto', background: 'none', display: 'block' }} width="200px" height="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+            <svg xmlns="http://www.w3.org/2000/svg" style={{ background: 'none', display: 'block' }} width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
                 <g transform="translate(80,50)">
                     <g transform="rotate(0)">
                         <circle cx="0" cy="0" r="7" fill="#672e2e" fillOpacity="0.75">
