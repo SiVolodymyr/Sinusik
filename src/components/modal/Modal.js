@@ -43,50 +43,62 @@ const Modal = ({ isOpen, photo, currentIndex, total, onClose, onPrev, onNext, bg
     };
 
     const handleTouchStart = (e) => {
-        setTouchStartX(e.changedTouches[0].clientX);
-    };
-
-    const handleTouchEnd = (e) => {
-
-        if (touchStartX !== null) {
-            const deltaX = touchStartX - e.changedTouches[0].clientX;
-
-            if (Math.abs(deltaX) > 50) { // Чутливість свайпу
-                if (deltaX > 0) {
-                    onNext(); // свайп вліво
-                } else {
-                    onPrev(); // свайп вправо
-                }
-            }
-
-            // Очистити після свайпу
-            setTouchStartX(null);
-        }
-    };
-
-    const handleTouchStartZoom = (e) => {
         if (e.touches.length === 2) {
             const dist = getDistance(e.touches);
             setInitialDistance(dist);
+        } else if (e.touches.length === 1) {
+            setTouchStartX(e.touches[0].clientX);
         }
     };
 
-    const handleTouchMoveZoom = (e) => {
+    const handleTouchMove = (e) => {
         if (e.touches.length === 2 && initialDistance) {
+            e.preventDefault(); // блок нативного зуму
             const dist = getDistance(e.touches);
-            if (dist > initialDistance + 30) { // 30px — поріг для активації зуму
+            if (dist > initialDistance + 30) {
                 setIsZoomed(true);
             }
         }
     };
 
-    const handleTouchEndZoom = (e) => {
-        // Якщо менше ніж два пальці залишились — скидаємо зум
+    const handleTouchEnd = (e) => {
         if (e.touches.length < 2) {
             setIsZoomed(false);
             setInitialDistance(null);
         }
+
+        if (touchStartX !== null && e.changedTouches.length === 1) {
+            const deltaX = touchStartX - e.changedTouches[0].clientX;
+            if (Math.abs(deltaX) > 50) {
+                deltaX > 0 ? onNext() : onPrev();
+            }
+            setTouchStartX(null);
+        }
     };
+
+    // const handleTouchStartZoom = (e) => {
+    //     if (e.touches.length === 2) {
+    //         const dist = getDistance(e.touches);
+    //         setInitialDistance(dist);
+    //     }
+    // };
+
+    // const handleTouchMoveZoom = (e) => {
+    //     if (e.touches.length === 2 && initialDistance) {
+    //         const dist = getDistance(e.touches);
+    //         if (dist > initialDistance + 30) { // 30px — поріг для активації зуму
+    //             setIsZoomed(true);
+    //         }
+    //     }
+    // };
+
+    // const handleTouchEndZoom = (e) => {
+    //     // Якщо менше ніж два пальці залишились — скидаємо зум
+    //     if (e.touches.length < 2) {
+    //         setIsZoomed(false);
+    //         setInitialDistance(null);
+    //     }
+    // };
 
     // Підрахунок відстані між двома пальцями
     const getDistance = (touches) => {
@@ -117,9 +129,9 @@ const Modal = ({ isOpen, photo, currentIndex, total, onClose, onPrev, onNext, bg
                             alt={photo.title}
                             ref={imgRef}
                             onLoad={handleImageLoad}
-                            onTouchStart={handleTouchStartZoom}
-                            onTouchMove={handleTouchMoveZoom}
-                            onTouchEnd={handleTouchEndZoom}
+                            onTouchStart={handleTouchStart}
+                            onTouchMove={handleTouchMove}
+                            onTouchEnd={handleTouchEnd}
                             className={`modal_img ${orientation} ${isZoomed ? 'zoomed' : ''}`}
                             style={{ display: isImageLoading ? 'none' : 'block' }}
                         />

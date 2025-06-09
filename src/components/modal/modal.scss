@@ -54,7 +54,7 @@
         height: 100%;
         user-select: none;
         pointer-events: auto;
-        touch-action: pan-y pan-x;
+        // touch-action: pan-y pan-x;
         object-fit: contain;
         transition: transform 0.2s ease;
         touch-action: none;
