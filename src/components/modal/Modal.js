@@ -1,3 +1,6 @@
+
+
+
 import { useEffect, useRef, useState } from 'react';
 import Spinner from '../spinner/Spinner';
 import './modal.scss';
@@ -7,8 +10,6 @@ const Modal = ({ isOpen, photo, currentIndex, total, onClose, onPrev, onNext, bg
     const [orientation, setOrientation] = useState('');
     const [isImageLoading, setIsImageLoading] = useState(true);
     const [touchStartX, setTouchStartX] = useState(null);
-    const [isZoomed, setIsZoomed] = useState(false);
-    const [initialDistance, setInitialDistance] = useState(null);
 
     useEffect(() => {
         const handleKeyDown = (e) => {
@@ -43,69 +44,25 @@ const Modal = ({ isOpen, photo, currentIndex, total, onClose, onPrev, onNext, bg
     };
 
     const handleTouchStart = (e) => {
-        if (e.touches.length === 2) {
-            const dist = getDistance(e.touches);
-            setInitialDistance(dist);
-        } else if (e.touches.length === 1) {
-            setTouchStartX(e.touches[0].clientX);
-        }
-    };
-
-    const handleTouchMove = (e) => {
-        if (e.touches.length === 2 && initialDistance) {
-            e.preventDefault(); // блок нативного зуму
-            const dist = getDistance(e.touches);
-            if (dist > initialDistance + 30) {
-                setIsZoomed(true);
-            }
-        }
+        setTouchStartX(e.changedTouches[0].clientX);
     };
 
     const handleTouchEnd = (e) => {
-        if (e.touches.length < 2) {
-            setIsZoomed(false);
-            setInitialDistance(null);
-        }
 
-        if (touchStartX !== null && e.changedTouches.length === 1) {
+        if (touchStartX !== null) {
             const deltaX = touchStartX - e.changedTouches[0].clientX;
-            if (Math.abs(deltaX) > 50) {
-                deltaX > 0 ? onNext() : onPrev();
+
+            if (Math.abs(deltaX) > 50) { // Чутливість свайпу
+                if (deltaX > 0) {
+                    onNext(); // свайп вліво
+                } else {
+                    onPrev(); // свайп вправо
+                }
             }
+
+            // Очистити після свайпу
             setTouchStartX(null);
         }
-    };
-
-    // const handleTouchStartZoom = (e) => {
-    //     if (e.touches.length === 2) {
-    //         const dist = getDistance(e.touches);
-    //         setInitialDistance(dist);
-    //     }
-    // };
-
-    // const handleTouchMoveZoom = (e) => {
-    //     if (e.touches.length === 2 && initialDistance) {
-    //         const dist = getDistance(e.touches);
-    //         if (dist > initialDistance + 30) { // 30px — поріг для активації зуму
-    //             setIsZoomed(true);
-    //         }
-    //     }
-    // };
-
-    // const handleTouchEndZoom = (e) => {
-    //     // Якщо менше ніж два пальці залишились — скидаємо зум
-    //     if (e.touches.length < 2) {
-    //         setIsZoomed(false);
-    //         setInitialDistance(null);
-    //     }
-    // };
-
-    // Підрахунок відстані між двома пальцями
-    const getDistance = (touches) => {
-        const [touch1, touch2] = touches;
-        const dx = touch2.clientX - touch1.clientX;
-        const dy = touch2.clientY - touch1.clientY;
-        return Math.sqrt(dx * dx + dy * dy);
     };
 
     if (!isOpen) return null;
@@ -129,10 +86,7 @@ const Modal = ({ isOpen, photo, currentIndex, total, onClose, onPrev, onNext, bg
                             alt={photo.title}
                             ref={imgRef}
                             onLoad={handleImageLoad}
-                            onTouchStart={handleTouchStart}
-                            onTouchMove={handleTouchMove}
-                            onTouchEnd={handleTouchEnd}
-                            className={`modal_img ${orientation} ${isZoomed ? 'zoomed' : ''}`}
+                            className={`modal_img ${orientation}`}
                             style={{ display: isImageLoading ? 'none' : 'block' }}
                         />
                     </div>
@@ -158,121 +112,6 @@ const Modal = ({ isOpen, photo, currentIndex, total, onClose, onPrev, onNext, bg
 };
 
 export default Modal;
-
-
-
-
-// import { useEffect, useRef, useState } from 'react';
-// import Spinner from '../spinner/Spinner';
-// import './modal.scss';
-
-// const Modal = ({ isOpen, photo, currentIndex, total, onClose, onPrev, onNext, bgColor }) => {
-//     const imgRef = useRef(null);
-//     const [orientation, setOrientation] = useState('');
-//     const [isImageLoading, setIsImageLoading] = useState(true);
-//     const [touchStartX, setTouchStartX] = useState(null);
-
-//     useEffect(() => {
-//         const handleKeyDown = (e) => {
-//             if (!isOpen) return;
-//             if (e.key === 'ArrowLeft') onPrev();
-//             else if (e.key === 'ArrowRight') onNext();
-//             else if (e.key === 'Escape') onClose();
-//         };
-
-//         if (isOpen) {
-//             window.addEventListener('keydown', handleKeyDown);
-//             document.body.style.overflow = 'hidden';
-//         }
-
-//         return () => {
-//             window.removeEventListener('keydown', handleKeyDown);
-//             document.body.style.overflow = '';
-//         };
-//     }, [isOpen, onPrev, onNext, onClose]);
-
-//     useEffect(() => {
-//         setIsImageLoading(true);
-//     }, [photo]);
-
-//     const handleImageLoad = () => {
-//         const img = imgRef.current;
-//         if (img) {
-//             const isVertical = img.naturalHeight > img.naturalWidth;
-//             setOrientation(isVertical ? 'vertical' : 'horizontal');
-//         }
-//         setIsImageLoading(false);
-//     };
-
-//     const handleTouchStart = (e) => {
-//         setTouchStartX(e.changedTouches[0].clientX);
-//     };
-
-//     const handleTouchEnd = (e) => {
-
-//         if (touchStartX !== null) {
-//             const deltaX = touchStartX - e.changedTouches[0].clientX;
-
-//             if (Math.abs(deltaX) > 50) { // Чутливість свайпу
-//                 if (deltaX > 0) {
-//                     onNext(); // свайп вліво
-//                 } else {
-//                     onPrev(); // свайп вправо
-//                 }
-//             }
-
-//             // Очистити після свайпу
-//             setTouchStartX(null);
-//         }
-//     };
-
-//     if (!isOpen) return null;
-
-//     return (
-//         <div className="modal_overlay" onClick={onClose}>
-//             <div
-//                 className={`modal_content ${orientation}`}
-//                 style={{ backgroundColor: bgColor }}
-//                 onClick={(e) => e.stopPropagation()}
-//                 onTouchStart={handleTouchStart}
-//                 onTouchEnd={handleTouchEnd}
-//             >
-//                 <button className="close_btn" onClick={onClose}>×</button>
-
-//                 <div className="modal_inside">
-//                     <div className={`modal_image ${orientation}`}>
-//                         {isImageLoading && <Spinner />}
-//                         <img
-//                             src={photo.src}
-//                             alt={photo.title}
-//                             ref={imgRef}
-//                             onLoad={handleImageLoad}
-//                             className={`modal_img ${orientation}`}
-//                             style={{ display: isImageLoading ? 'none' : 'block' }}
-//                         />
-//                     </div>
-//                 </div>
-
-//                 <div className="modal_descr">
-//                     <div className="modal_descr_info">
-//                         <button className="modal_descr modal_descr_l" style={{ backgroundColor: bgColor }} onClick={onPrev}>←</button>
-//                         <span className="modal_descr_index">{currentIndex + 1} / {total}</span>
-//                         <button className="modal_descr modal_descr_r" style={{ backgroundColor: bgColor }} onClick={onNext}>→</button>
-//                     </div>
-//                     <p className="modal_descr_title">{photo.title}</p>
-//                     <div className="modal_descr_wrapper">
-//                         <p className="photo_medium">{photo.medium}</p>
-//                         <p className="photo_year">{photo.year}</p>
-//                         <p className="photo_place">{photo.place}</p>
-//                         <p className="photo_size">{photo.size}</p>
-//                     </div>
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// };
-
-// export default Modal;
 
 //розміщення, свайпи
 

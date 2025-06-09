@@ -146,6 +146,14 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
+                        <div className='home_aboutSite'>
+                            <p>
+                                In the fall of 2024, I started learning web development. Nearly every evening after work, I explored this new field, which quickly sparked my interest.
+                            </p>
+                            <p>
+                                I created this website on my own as a final project that reflects the skills and knowledge I’ve acquired over this time.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
