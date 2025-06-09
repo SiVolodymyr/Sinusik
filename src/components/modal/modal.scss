@@ -1,7 +1,7 @@
 .modal {
 
     &_overlay {
-        touch-action: pan-y;
+        touch-action: pan-y pan-x;
         position: fixed;
         display: flex;
         inset: 0;
@@ -28,7 +28,7 @@
         position: relative;
         padding: 25px;
         text-align: center;
-        touch-action: pan-y;
+        touch-action: pan-y pan-x;
         -webkit-overflow-scrolling: touch;
 
         .close_btn {
@@ -54,7 +54,7 @@
         height: 100%;
         user-select: none;
         pointer-events: auto;
-        touch-action: pan-y;
+        touch-action: pan-y pan-x;
         object-fit: contain;
     }
 
