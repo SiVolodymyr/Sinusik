@@ -113,6 +113,7 @@ const Modal = ({ isOpen, photo, currentIndex, total, onClose, onPrev, onNext, bg
 
 export default Modal;
 
+
 //розміщення, свайпи
 
 
