@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 import { Carousel } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './GroupedCarousel.scss';
 
 const GroupedCarousel = ({ images, classNamePrefix }) => {

@@ -321,5 +321,48 @@
                 "src": "../resources/img/exhibitions/6009.jpg"
             }
         ]
+    },
+    {
+        "tab": "Art Center Dzyga, Apartment 35",
+        "paragraphs": [
+            "The exhibition ran from December 16, 2023, to January 4, 2024. This cozy space is full of creative energy and inspiration. Apartment 35 hosts various events every day — personally, I'm especially fond of the live music evenings. It was a real pleasure to collaborate with the team and to see my works displayed in such a vibrant cultural hub at the heart of Lviv's artistic life. I'm grateful for the opportunity to be part of a place where art feels truly alive."
+        ],
+        "images": [
+            {
+                "id": 1,
+                "title": "Art Center Dzyga, Apartment 35 1",
+                "src": "../resources/img/exhibitions/7001.jpg"
+            },
+            {
+                "id": 2,
+                "title": "Art Center Dzyga, Apartment 35 2",
+                "src": "../resources/img/exhibitions/7002.jpg"
+            },
+            {
+                "id": 3,
+                "title": "Art Center Dzyga, Apartment 35 3",
+                "src": "../resources/img/exhibitions/7003.jpg"
+            },
+            {
+                "id": 4,
+                "title": "Art Center Dzyga, Apartment 35 4",
+                "src": "../resources/img/exhibitions/7004.jpg"
+            },
+            {
+                "id": 5,
+                "title": "Art Center Dzyga, Apartment 35 5",
+                "src": "../resources/img/exhibitions/7005.jpg"
+            },
+            {
+                "id": 6,
+                "title": "Art Center Dzyga, Apartment 35 6",
+                "src": "../resources/img/exhibitions/7006.jpg"
+            },
+            {
+                "id": 7,
+                "title": "Art Center Dzyga, Apartment 35 7",
+                "src": "../resources/img/exhibitions/7007.jpg"
+            }
+        ]
     }
 ]

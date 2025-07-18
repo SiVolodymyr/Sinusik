@@ -1,11 +1,13 @@
-
-import Spinner from '../../spinner/Spinner';
 import { useState, useEffect } from 'react';
 import { Carousel } from 'react-bootstrap';
 import { Helmet } from 'react-helmet-async';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 import homeData from '../../../resources/data/Home_db.json';
+
+import Spinner from '../../spinner/Spinner';
 import GroupedCarousel from '../../GroupedCarousel/GroupedCarousel';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './home.scss';
 
 const getImagePaths = () => {
