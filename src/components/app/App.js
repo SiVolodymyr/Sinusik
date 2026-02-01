@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes, useLocation, Navigate } from "r
 import { HelmetProvider } from "react-helmet-async";
 import { Spinner } from "react-bootstrap";
 
-import { Home, Biography, Periods, Exhibitions, Contacts, Page404 } from "../pages";
+import { Home, Biography, Periods, Exhibitions, Contacts, Page404, RoomsWithoutTime } from "../pages";
 
 import AppHeader from "../appHeader/AppHeader";
 
@@ -48,6 +48,7 @@ const MainContent = () => {
             <Route path="/exhibitions" element={<Navigate to="/exhibitions/student-group-exhibition" replace />} />
             <Route path="/exhibitions/:exhibitionSlug" element={<Exhibitions bgColor={bgColor} />} />
             <Route path="/works" element={<Works bgColor={bgColor} />} />
+            <Route path="/rooms_without_time" element={<RoomsWithoutTime />} />
             <Route path="/contacts" element={<Contacts bgColor={bgColor} />} />
             <Route path="*" element={<Page404 />} />
           </Routes>

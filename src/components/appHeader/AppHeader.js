@@ -52,6 +52,7 @@ const AppHeader = ({ bgColor, setBgColor }) => {
                             <li className='menu_item'><NavLink className={'menu_links'} style={({ isActive }) => ({ fontWeight: isActive ? '700' : 'inherit' })} to="/periods" onClick={closeMenu}>Periods</NavLink></li>
                             <li className='menu_item'><NavLink className={'menu_links'} style={({ isActive }) => ({ fontWeight: isActive ? '700' : 'inherit' })} to="/exhibitions" onClick={closeMenu}>Exhibitions</NavLink></li>
                             <li className='menu_item'><NavLink className={'menu_links'} style={({ isActive }) => ({ fontWeight: isActive ? '700' : 'inherit' })} to="/works" onClick={closeMenu}>Works</NavLink></li>
+                            <li className='menu_item'><NavLink className={'menu_links'} style={({ isActive }) => ({ fontWeight: isActive ? '700' : 'inherit' })} to="/rooms_without_time" onClick={closeMenu}>RWT</NavLink></li>
                             <li className='menu_item'><NavLink className={'menu_links'} style={({ isActive }) => ({ fontWeight: isActive ? '700' : 'inherit' })} to="/contacts" onClick={closeMenu}>Contacts</NavLink></li>
                         </ul>
                         <div className={`hamburger hamburger${isActive ? '_active' : ''}`} onClick={menuClick}>

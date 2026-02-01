@@ -131,6 +131,10 @@
         flex-direction: row;
         justify-content: space-between;
     }
+
+    &_aboutSite {
+        text-align: center;
+    }
 }
 
 @media (max-width: 1399px) {

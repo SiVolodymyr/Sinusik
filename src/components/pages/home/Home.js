@@ -29,7 +29,7 @@ const Home = () => {
 
     const imageCapitel = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
-    const imagePleinair = [1, 2, 3, 4, 5, 6];
+    const imagePleinair = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
     useEffect(() => {
         const imagePaths = getImagePaths();
@@ -56,7 +56,7 @@ const Home = () => {
     return (
         <>
             <Helmet>
-                <title>Volodymyr Sinusik — Artist & Illustrator</title>
+                <title>Volodymyr Sinusik — Artis</title>
                 <meta
                     name="description"
                     content="Welcome to the official website of Volodymyr Sinusik, showcasing his art, exhibitions, biography, and contact information."
@@ -69,7 +69,7 @@ const Home = () => {
                     content="Volodymyr Sinusik, artist, paintings, exhibitions, biography, contact"
                 />
 
-                <meta property="og:title" content="Volodymyr Sinusik — Artist & Illustrator" />
+                <meta property="og:title" content="Volodymyr Sinusik — Artist" />
                 <meta
                     property="og:description"
                     content="Official website of Volodymyr Sinusik, featuring his artworks, exhibitions, biography, and contact details."
@@ -140,17 +140,17 @@ const Home = () => {
                             </div>
                             <GroupedCarousel images={imagePleinair} classNamePrefix="pleinair" />
                             <div className='home_descr'>
-                                <div className='home_title'>Pleinair with students</div>
+                                <div className='home_title'>Pleinair</div>
                                 <div className='home_wrapper'>
                                     <div className='home_medium'>watercolor</div>
-                                    <div className='home_size'>A4</div>
-                                    <div className='home_time'>May-June 2025</div>
+                                    <div className='home_size'>A4 — A3</div>
+                                    <div className='home_time'>May-August 2025</div>
                                 </div>
                             </div>
                         </div>
                         <div className='home_aboutSite'>
                             <p>
-                                In the fall of 2024, I started learning web development. Nearly every evening after work, I explored this new field, which quickly sparked my interest.
+                                In the fall of 2024, I started learning web development.
                             </p>
                             <p>
                                 I created this website on my own as a final project that reflects the skills and knowledge I’ve acquired over this time.
