@@ -27,7 +27,7 @@ const RoomsWithoutTime = () => {
                 <meta property="og:url" content="https://sinusik.com/" />
                 <meta
                     property="og:image"
-                    content="https://sinusik.com/images/home-preview.jpg"
+                    content="https://sinusik.com/images/rwt-preview.jpg"
                 />
 
                 <meta name="twitter:card" content="summary_large_image" />
