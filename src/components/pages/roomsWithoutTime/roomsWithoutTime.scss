@@ -26,11 +26,12 @@
         align-items: center;
         justify-content: center;
         width: 400px;
-        height: 320px;
+        height: 400px;
         margin: auto auto;
 
         img {
             width: 100%;
+            height: 100%;
             object-fit: contain;
         }
 
@@ -82,7 +83,7 @@
     }
 
     &_statement {
-        margin-top: 30px;
+        margin-top: 50px;
 
         &__title {
             margin-bottom: 10px;
@@ -112,7 +113,7 @@
     .rooms {
         &_photo {
             width: 270px;
-            height: 216px;
+            height: 270px;
 
             &__main {
                 width: 270px;

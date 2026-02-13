@@ -61,6 +61,19 @@ const RoomsWithoutTime = () => {
                     <div className="rooms_wrapper">
                         <div className="rooms_block">
                             <div className="rooms_photo rooms_photo__1">
+                            <img src="../resources/img/works/10807.jpg" alt="Before a job" />
+                        </div>
+                        <div className="rooms_text">
+                            <div className="rooms_name">Before a job</div>
+                            <div className="rooms_descr">
+                                <div className="rooms_year">2023</div>
+                                <div className="rooms_medium">oil on canvas</div>
+                                <div className="rooms_size">95×75 cm</div>
+                            </div>
+                        </div>
+                        </div>
+                        <div className="rooms_block">
+                            <div className="rooms_photo rooms_photo__2">
                                 <img src="../resources/img/works/10801.jpg" alt="Room of a poetess" />
                             </div>
                             <div className="rooms_text">
@@ -73,8 +86,21 @@ const RoomsWithoutTime = () => {
                             </div>
                         </div>
                         <div className="rooms_block">
-                            <div className="rooms_photo rooms_photo__2">
-                                <img src="../resources/img/works/10904.jpg" alt="Square evening light" />
+                            <div className="rooms_photo rooms_photo__3">
+                                <img src="../resources/img/works/10907.jpg" alt="Black room" />
+                            </div>
+                            <div className="rooms_text">
+                                <div className="rooms_name">Black room</div>
+                                <div className="rooms_descr">
+                                    <div className="rooms_year">2024</div>
+                                    <div className="rooms_medium">oil on canvas</div>
+                                    <div className="rooms_size">105×75 cm</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="rooms_block">
+                            <div className="rooms_photo rooms_photo__4">
+                                <img src="../resources/img/works/10903.jpg" alt="Square evening light" />
                             </div>
                             <div className="rooms_text">
                                 <div className="rooms_name">Square evening light</div>
@@ -86,20 +112,7 @@ const RoomsWithoutTime = () => {
                             </div>
                         </div>
                         <div className="rooms_block">
-                            <div className="rooms_photo rooms_photo__3">
-                                <img src="../resources/img/works/10901.jpg" alt="Evening by the sea" />
-                            </div>
-                            <div className="rooms_text">
-                                <div className="rooms_name">Evening by the sea</div>
-                                <div className="rooms_descr">
-                                    <div className="rooms_year">2024</div>
-                                    <div className="rooms_medium">oil on canvas</div>
-                                    <div className="rooms_size">80×100 cm</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="rooms_block">
-                            <div className="rooms_photo rooms_photo__4">
+                            <div className="rooms_photo rooms_photo__5">
                                 <img src="../resources/img/works/10902.jpg" alt="Everything is gray" />
                             </div>
                             <div className="rooms_text">
@@ -112,7 +125,7 @@ const RoomsWithoutTime = () => {
                             </div>
                         </div>
                         <div className="rooms_block">
-                            <div className="rooms_photo rooms_photo__5">
+                            <div className="rooms_photo rooms_photo__6">
                                 <img src="../resources/img/works/10903.jpg" alt="Creative search" />
                             </div>
                             <div className="rooms_text">
@@ -125,7 +138,7 @@ const RoomsWithoutTime = () => {
                             </div>
                         </div>
                         <div className="rooms_block">
-                            <div className="rooms_photo rooms_photo__6">
+                            <div className="rooms_photo rooms_photo__7">
                                 <img src="../resources/img/works/10905.jpg" alt="Cozy evening light" />
                             </div>
                             <div className="rooms_text">
@@ -139,19 +152,6 @@ const RoomsWithoutTime = () => {
                         </div>
                         <div className="rooms_block">
                             <div className="rooms_photo rooms_photo__8">
-                                <img src="../resources/img/works/10805.jpg" alt="Reading girl" />
-                            </div>
-                            <div className="rooms_text">
-                                <div className="rooms_name">Reading girl</div>
-                                <div className="rooms_descr">
-                                    <div className="rooms_year">2023</div>
-                                    <div className="rooms_medium">oil on canvas</div>
-                                    <div className="rooms_size">75×95 cm</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="rooms_block">
-                            <div className="rooms_photo rooms_photo__9">
                                 <img src="../resources/img/works/10806.jpg" alt="Beginning of the summer" />
                             </div>
                             <div className="rooms_text">
@@ -165,6 +165,71 @@ const RoomsWithoutTime = () => {
                         </div>
                         <div className="rooms_block">
                             <div className="rooms_photo rooms_photo__9">
+                                <img src="../resources/img/works/10814.jpg" alt="Room in the morning" />
+                            </div>
+                            <div className="rooms_text">
+                                <div className="rooms_name">Room in the morning</div>
+                                <div className="rooms_descr">
+                                    <div className="rooms_year">2023</div>
+                                    <div className="rooms_medium">oil on canvas</div>
+                                    <div className="rooms_size">75×55 cm</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="rooms_block">
+                            <div className="rooms_photo rooms_photo__10">
+                                <img src="../resources/img/works/10803.jpg" alt="Anastasiia" />
+                            </div>
+                            <div className="rooms_text">
+                                <div className="rooms_name">Anastasiia</div>
+                                <div className="rooms_descr">
+                                    <div className="rooms_year">2023</div>
+                                    <div className="rooms_medium">oil on canvas</div>
+                                    <div className="rooms_size">95×75 cm</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="rooms_block">
+                            <div className="rooms_photo rooms_photo__11">
+                                <img src="../resources/img/works/10809.jpg" alt="Sister and chrysanthemums" />
+                            </div>
+                            <div className="rooms_text">
+                                <div className="rooms_name">Sister and chrysanthemums</div>
+                                <div className="rooms_descr">
+                                    <div className="rooms_year">2023</div>
+                                    <div className="rooms_medium">oil on canvas</div>
+                                    <div className="rooms_size">85×65 cm</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="rooms_block">
+                            <div className="rooms_photo rooms_photo__12">
+                                <img src="../resources/img/works/10810.jpg" alt="Room and Sapho" />
+                            </div>
+                            <div className="rooms_text">
+                                <div className="rooms_name">Room and Sapho</div>
+                                <div className="rooms_descr">
+                                    <div className="rooms_year">2023</div>
+                                    <div className="rooms_medium">oil on canvas</div>
+                                    <div className="rooms_size">85×65 cm</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="rooms_block">
+                            <div className="rooms_photo rooms_photo__13">
+                                <img src="../resources/img/works/10805.jpg" alt="Reading girl" />
+                            </div>
+                            <div className="rooms_text">
+                                <div className="rooms_name">Reading girl</div>
+                                <div className="rooms_descr">
+                                    <div className="rooms_year">2023</div>
+                                    <div className="rooms_medium">oil on canvas</div>
+                                    <div className="rooms_size">75×95 cm</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="rooms_block">
+                            <div className="rooms_photo rooms_photo__14">
                                 <img src="../resources/img/works/10811.jpg" alt="Room of shadows" />
                             </div>
                             <div className="rooms_text">
@@ -176,15 +241,29 @@ const RoomsWithoutTime = () => {
                                 </div>
                             </div>
                         </div>
+                        <div className="rooms_block">
+                            <div className="rooms_photo rooms_photo__15">
+                                <img src="../resources/img/works/10813.jpg" alt="Room in the evening" />
+                            </div>
+                            <div className="rooms_text">
+                                <div className="rooms_name">Room in the evening</div>
+                                <div className="rooms_descr">
+                                    <div className="rooms_year">2023</div>
+                                    <div className="rooms_medium">oil on canvas</div>
+                                    <div className="rooms_size">75×55 cm</div>
+                                </div>
+                            </div>
+                        </div>                        
                     </div>
                     <div className="rooms_statement">
                         <h2 className="rooms_statement__title">Artist Statement</h2>
-                        <p>Rooms Without Time is a series of paintings that focuses on interior spaces as psychological environments.
-                            Rooms, windows, and fragments of the city create quiet, suspended scenes where time appears slowed or absent.
-                            The human figure, when present, functions as a sign of presence rather than a narrative subject.
+                        <p>Volodymyr Sinusik is an oil painter working within the tradition of European easel painting, with a primary focus on colour construction and spatial composition. <br /><br />
 
-                            Working with geometry, color, and spatial rhythm, I construct a balance between structure and intuition.
-                            Painting allows me to transform everyday interiors into places of stillness, reflection, and internal tension.</p>
+His practice is rooted in the classical language of painting, where colour operates as structure rather than decoration. Interior spaces, windows, and urban fragments serve as frameworks for exploring balance, tension, and rhythm within the pictorial field. Narrative elements remain reduced; the image is built through relationships between planes, tones, and measured intervals of colour. <br /><br />
+
+Working exclusively in oil on canvas, Sinusik develops long-form series that investigate the stability of painted space. The process is deliberate and material-based, emphasizing the physical presence of paint and the discipline of composition. The resulting works aim toward a state of visual stillness where structure and atmosphere coexist without anecdote. <br /><br />
+
+Rather than referencing contemporary trends, his work continues the European painterly tradition in which the canvas functions as a constructed environment governed by internal logic. Each painting becomes an autonomous space defined by proportion, restraint, and sustained attention to colour as a structural force.</p>
                     </div>
                     <div className="rooms_sv">
                         <div className="rooms_sv__info">
